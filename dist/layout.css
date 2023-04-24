@@ -1,118 +1,118 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 svg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 html,
 body,
 .page {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* used for things that should be hidden in the ui,
 but useful for people who use screen readers */
 .visually-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
 
 .page {
-    font-size: var(--font-size-medium);
-    font-family: var(--font-family-default);
-    background-color: var(--theme-background-body);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    overflow: auto;
+  font-size: var(--font-size-medium);
+  font-family: var(--font-family-default);
+  background-color: var(--theme-background-body);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
 }
 
 .content {
-    min-width: 300px;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-top: var(--spacing-medium);
-    padding-left: var(--spacing-medium);
-    padding-right: var(--spacing-medium);
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    z-index: 80;
-    /* expand height if content is empty */
-    flex: 1;
-    background-color: var(--theme-background-body);
-    color: var(--theme-copy-text);
+  min-width: 300px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: var(--spacing-medium);
+  padding-left: var(--spacing-medium);
+  padding-right: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 80;
+  /* expand height if content is empty */
+  flex: 1;
+  background-color: var(--theme-background-body);
+  color: var(--theme-copy-text);
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-medium);
 }
 
 .columns-3-balanced {
-    width: calc(33.33% - ((var(--spacing-medium) * 2) / 3));
+  width: calc(33.33% - ((var(--spacing-medium) * 2) / 3));
 }
 
 .columns-3-wide {
-    width: calc(50% - ((var(--spacing-medium) * 2) / 3));
+  width: calc(50% - ((var(--spacing-medium) * 2) / 3));
 }
 
 .columns-3-narrow {
-    width: calc(25% - ((var(--spacing-medium) * 2) / 3));
+  width: calc(25% - ((var(--spacing-medium) * 2) / 3));
 }
 
 .columns-wrap {
-    width: calc(33.33% - ((var(--spacing-medium) * 2) / 3));
-    flex-wrap: wrap;
+  width: calc(33.33% - ((var(--spacing-medium) * 2) / 3));
+  flex-wrap: wrap;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 16px;
-    row-gap: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 16px;
 }
 
 .grid-item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {
-    .columns-3-balanced,
-    .columns-3-wide,
-    .columns-3-narrow,
-    .columns-wrap {
-        width: 100%;
-    }
+  .columns-3-balanced,
+  .columns-3-wide,
+  .columns-3-narrow,
+  .columns-wrap {
+    width: 100%;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1199px){
-    .columns-wrap {
-        width: calc(50% - (var(--spacing-medium) / 2));
-    }
+@media (min-width: 768px) and (max-width: 1199px) {
+  .columns-wrap {
+    width: calc(50% - (var(--spacing-medium) / 2));
+  }
 }

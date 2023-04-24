@@ -1,586 +1,552 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="description" content="A Todo App" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>News Site</title>
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="assets/favicon.svg"
-            id="favicon-svg"
-        />
-        <link rel="stylesheet" href="src/reset.css" />
-        <link rel="stylesheet" href="src/variables.css" />
-        <link rel="stylesheet" href="src/advertisement.css" />
-        <link rel="stylesheet" href="src/header.css" />
-        <link rel="stylesheet" href="src/nav.css" />
-        <link rel="stylesheet" href="src/article.css" />
-        <link rel="stylesheet" href="src/footer.css" />
-        <link rel="stylesheet" href="src/dropdown.css" />
-        <link rel="stylesheet" href="src/layout.css" />
-    </head>
-    <body>
-        <div class="page frontpage">
-            <div class="header-advertisement-container">
-                <div class="header-advertisement-iframe">
-                    <picture>
-                        <source
-                            media="(max-width: 599px)"
-                            srcset="assets/Hero_300x250.jpg"
-                        />
-                        <source
-                            media="(max-width: 969px)"
-                            srcset="assets/Hero_600x250.jpg"
-                        />
-                        <img
-                            src="assets/Hero_970x250.jpg"
-                            alt="Advertisement: Speedometer"
-                        />
-                    </picture>
-                </div>
-                <div class="header-advertisement-notice">Advertisement</div>
-            </div>
-            <header class="header">
-                <div class="header-inner">
-                    <div class="header-left">
-                        <nav class="header-nav">
-                            <input type="checkbox" id="header-nav-toggle" />
-                            <label
-                                for="header-nav-toggle"
-                                class="header-nav-icon"
-                            >
-                                <svg
-                                    class="header__menu-icon-svg"
-                                    width="64"
-                                    height="63"
-                                    viewBox="0 0 64 63"
-                                >
-                                    <title>Menu Icon</title>
-                                    <path
-                                        d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"
-                                    ></path>
-                                    <path
-                                        d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"
-                                    ></path>
-                                    <path
-                                        d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"
-                                    ></path>
-                                </svg>
-                            </label>
-                            <div class="header-logo">
-                                <svg width="24" height="24" viewBox="0 0 24 24">
-                                    <title>Logo Icon</title>
-                                    <path
-                                        d="M2 24h2.948c1-.923 2.004-2 3.55-2 1.547 0 2.55 1.077 3.55 2h2.948l-6.498-6-6.498 6zm20-8.042c0 3.269-5.858 3.387-9.787 1.79-6.835-2.779-9.629-9.79-7.817-15.17.84-2.496 1.852-3.84 6.333-.922 1.101.716 2.27 1.649 3.437 2.722l-1.72 1.152c-7.717-7.009-6.992-2.036-.983 4.55 5.858 6.417 11.668 8.615 5.767.717l1.199-1.745c1.223 1.634 3.571 4.873 3.571 6.906zm-1.026-12.437c-.004.829-.68 1.497-1.508 1.492-.225-.001-.436-.056-.628-.146l-3.829 5.646c-.784-.555-1.994-1.768-2.548-2.554l5.682-3.77c-.104-.207-.169-.437-.168-.684.005-.829.68-1.497 1.507-1.492.828.005 1.497.68 1.492 1.508z"
-                                    />
-                                </svg>
-                            </div>
-                            <ul class="header-nav-list">
-                                <li class="header-nav-item">
-                                    <a href="#">US</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <a href="#">World</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <a href="#">Politics</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <a href="#">Business</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <a href="#">Opinion</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <a href="#">Health</a>
-                                </li>
-                                <li class="header-nav-item">
-                                    <div class="dropdown">
-                                        <input
-                                            type="checkbox"
-                                            id="header-nav-dropdown-toggle"
-                                            class="dropdown-toggle"
-                                        />
-                                        <label
-                                            for="header-nav-dropdown-toggle"
-                                            class="dropdown-label"
-                                        >
-                                            More
-                                            <span class="arrow">
-                                                <span class="left-bar"></span>
-                                                <span class="right-bar"></span>
-                                            </span>
-                                        </label>
-                                        <ul class="dropdown-content">
-                                            <li class="header-nav-item">
-                                                <a href="#">Entertainment</a>
-                                            </li>
-                                            <li class="header-nav-item">
-                                                <a href="#">Style</a>
-                                            </li>
-                                            <li class="header-nav-item">
-                                                <a href="#">Travel</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header-right">
-                        <button class="header-button">Log In</button>
-                    </div>
-                </div>
-            </header>
-            <main class="content">
-                <h1 class="visually-hidden">Home Page</h1>
-                <section class="row">
-                    <article class="column columns-3-balanced article">
-                        <header class="article-header">
-                            <a href="#"><h2>Lorem ipsum</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua.
-                            </h3>
-                            <div class="article-content">
-                                <ul class="article-list">
-                                    <li class="article-list-item">
-                                        Tincidunt praesent semper feugiat nibh
-                                        sed pulvinar proin.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Ut enim blandit volutpat maecenas
-                                        volutpat blandit aliquam etiam.
-                                    </li>
-                                    <li class="article-list-item">
-                                        At auctor urna nunc id cursus metus
-                                        aliquam.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Sed vulputate odio ut enim blandit
-                                        volutpat.
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="column columns-3-balanced article">
-                        <header class="article-header">
-                            <a href="#"><h2>Augue neque</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Augue neque gravida in fermentum et sollicitudin
-                                ac orci.
-                            </h3>
-                            <div class="article-content">
-                                <ul class="article-list">
-                                    <li class="article-list-item">
-                                        Odio morbi quis commodo odio aenean sed
-                                        adipiscing diam donec.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Consequat semper viverra nam libero
-                                        justo laoreet sit.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Risus ultricies tristique nulla aliquet
-                                        enim tortor at auctor.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Diam vulputate ut pharetra sit amet
-                                        aliquam id diam maecenas.
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                    <article class="column columns-3-balanced article">
-                        <header class="article-header">
-                            <a href="#"><h2>Volutpat</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Volutpat est velit egestas dui id ornare arcu.
-                            </h3>
-                            <div class="article-content">
-                                <ul class="article-list">
-                                    <li class="article-list-item">
-                                        Nibh mauris cursus mattis molestie.
-                                        Varius vel pharetra vel turpis nunc eget
-                                        lorem dolor.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Turpis egestas maecenas pharetra
-                                        convallis posuere morbi leo urna
-                                        molestie.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Enim blandit volutpat maecenas volutpat
-                                        blandit aliquam etiam erat.
-                                    </li>
-                                    <li class="article-list-item">
-                                        Fermentum dui faucibus in ornare. In hac
-                                        habitasse platea dictumst vestibulum
-                                        rhoncus est pellentesque elit.
-                                    </li>
-                                </ul>
-                            </div>
-                        </section>
-                    </article>
-                </section>
-                <section class="row">
-                    <article class="column columns-3-wide article">
-                        <header class="article-header"><h2>Nisi</h2></header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Nisi porta lorem mollis aliquam ut porttitor leo
-                                a.
-                            </h3>
-                            <div class="article-content">
-                                Facilisis volutpat est velit egestas dui id
-                                ornare arcu odio. Arcu dictum varius duis at
-                                consectetur. Consectetur adipiscing elit
-                                pellentesque habitant morbi tristique senectus
-                                et netus. Rutrum tellus pellentesque eu
-                                tincidunt tortor aliquam. Sit amet dictum sit
-                                amet justo donec enim diam. Risus commodo
-                                viverra maecenas accumsan lacus vel facilisis.
-                                Sed augue lacus viverra vitae congue eu
-                                consequat ac. Ullamcorper dignissim cras
-                                tincidunt lobortis. In tellus integer feugiat
-                                scelerisque varius morbi enim. Maecenas sed enim
-                                ut sem viverra aliquet eget sit. Felis donec et
-                                odio pellentesque diam volutpat commodo.
-                            </div>
-                        </section>
-                    </article>
-                    <article class="column columns-3-narrow article">
-                        <header class="article-header"><h2>Mauris</h2></header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Mauris in aliquam sem fringilla ut morbi
-                                tincidunt augue.
-                            </h3>
-                            <div class="article-content">
-                                Nec ullamcorper sit amet risus nullam eget felis
-                                eget. Amet nulla facilisi morbi tempus iaculis
-                                urna id volutpat lacus. At lectus urna duis
-                                convallis convallis tellus. Pulvinar neque
-                                laoreet suspendisse interdum consectetur libero
-                                id. Mattis pellentesque id nibh tortor id
-                                aliquet lectus proin. Euismod quis viverra nibh
-                                cras pulvinar mattis nunc sed. Elementum
-                                sagittis vitae et leo duis ut diam quam.
-                                Tincidunt ornare massa eget egestas purus.
-                            </div>
-                        </section>
-                    </article>
-                    <article class="column columns-3-narrow article">
-                        <header class="article-header">
-                            <h2>Hendrerit</h2>
-                        </header>
-                        <section class="article-body">
-                            <picture class="article-image">
-                                <img
-                                    src="assets/placeholder_light.jpg"
-                                    alt="Placeholder"
-                                    width="1280"
-                                    height="720"
-                                />
-                            </picture>
-                            <h3 class="article-title">
-                                Hendrerit gravida rutrum quisque non tellus orci
-                                ac.
-                            </h3>
-                            <div class="article-content">
-                                Placerat vestibulum lectus mauris ultrices eros.
-                                Amet cursus sit amet dictum. Ultricies lacus sed
-                                turpis tincidunt id aliquet risus feugiat.
-                                Vulputate ut pharetra sit amet aliquam. Sit amet
-                                dictum sit amet justo donec enim. Ipsum dolor
-                                sit amet consectetur adipiscing elit. Sit amet
-                                consectetur adipiscing elit duis tristique
-                                sollicitudin. Lorem dolor sed viverra ipsum.
-                                Proin nibh nisl condimentum id venenatis a
-                                condimentum vitae sapien. Rutrum quisque non
-                                tellus orci ac auctor augue mauris.
-                            </div>
-                        </section>
-                    </article>
-                </section>
-                <section class="row">
-                    <article class="column article">
-                        <header class="article-header">
-                            <h2>Latest Images</h2>
-                        </header>
-                        <section class="grid article-body">
-                            <article class="grid-item">
-                                <picture class="article-image">
-                                    <img
-                                        src="assets/placeholder_light.jpg"
-                                        alt="Placeholder"
-                                        width="1280"
-                                        height="720"
-                                    />
-                                </picture>
-                            </article>
-                            <article class="grid-item">
-                                <picture class="article-image">
-                                    <img
-                                        src="assets/placeholder_light.jpg"
-                                        alt="Placeholder"
-                                        width="1280"
-                                        height="720"
-                                    />
-                                </picture>
-                            </article>
-                            <article class="grid-item">
-                                <picture class="article-image">
-                                    <img
-                                        src="assets/placeholder_light.jpg"
-                                        alt="Placeholder"
-                                        width="1280"
-                                        height="720"
-                                    />
-                                </picture>
-                            </article>
-                            <article class="grid-item">
-                                <picture class="article-image">
-                                    <img
-                                        src="assets/placeholder_light.jpg"
-                                        alt="Placeholder"
-                                        width="1280"
-                                        height="720"
-                                    />
-                                </picture>
-                            </article>
-                        </section>
-                    </article>
-                </section>
-                <section class="row">
-                    <article class="column columns-wrap article">
-                        <header class="article-header">
-                            <a href="#"><h2>Nulla</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <ul class="article-list">
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Mauris rhoncus aenean vel elit. Mauris
-                                        in aliquam sem fringilla ut. Cras
-                                        tincidunt lobortis feugiat vivamus at
-                                        augue eget.
-                                    </div>
-                                </li>
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Mauris rhoncus aenean vel elit. Mauris
-                                        in aliquam sem fringilla ut. Cras
-                                        tincidunt lobortis feugiat vivamus at
-                                        augue eget.
-                                    </div>
-                                </li>
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Mauris rhoncus aenean vel elit. Mauris
-                                        in aliquam sem fringilla ut. Cras
-                                        tincidunt lobortis feugiat vivamus at
-                                        augue eget.
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </article>
-                    <article class="column columns-wrap article">
-                        <header class="article-header">
-                            <a href="#"><h2>Ut lectus</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <ul class="article-list">
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Lobortis feugiat vivamus at augue eget.
-                                        Aliquam malesuada bibendum arcu vitae
-                                        elementum curabitur vitae nunc sed.
-                                        Velit sed ullamcorper morbi tincidunt
-                                        ornare massa eget.
-                                    </div>
-                                </li>
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Lobortis feugiat vivamus at augue eget.
-                                        Aliquam malesuada bibendum arcu vitae
-                                        elementum curabitur vitae nunc sed.
-                                        Velit sed ullamcorper morbi tincidunt
-                                        ornare massa eget.
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </article>
-                    <article class="column columns-wrap article">
-                        <header class="article-header">
-                            <a href="#"><h2>Nec</h2></a>
-                        </header>
-                        <section class="article-body">
-                            <ul class="article-list">
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Placerat in egestas erat imperdiet sed
-                                        euismod nisi porta. Volutpat commodo sed
-                                        egestas egestas fringilla phasellus
-                                        faucibus scelerisque.
-                                    </div>
-                                </li>
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Placerat in egestas erat imperdiet sed
-                                        euismod nisi porta. Volutpat commodo sed
-                                        egestas egestas fringilla phasellus
-                                        faucibus scelerisque.
-                                    </div>
-                                </li>
-                                <li class="article-list-item">
-                                    <div class="article-hero">
-                                        <picture class="article-image">
-                                            <img
-                                                src="assets/placeholder_light.jpg"
-                                                alt="Placeholder"
-                                                width="1280"
-                                                height="720"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div class="article-content">
-                                        Placerat in egestas erat imperdiet sed
-                                        euismod nisi porta. Volutpat commodo sed
-                                        egestas egestas fringilla phasellus
-                                        faucibus scelerisque.
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
-                    </article>
-                </section>
-            </main>
-            <footer>© 1997 No Rights Reserved.</footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A Todo App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News Site</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/favicon.svg"
+      id="favicon-svg"
+    />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/variables.css" />
+    <link rel="stylesheet" href="src/advertisement.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/article.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+    <link rel="stylesheet" href="src/dropdown.css" />
+    <link rel="stylesheet" href="src/layout.css" />
+  </head>
+  <body>
+    <div class="page frontpage">
+      <div class="header-advertisement-container">
+        <div class="header-advertisement-iframe">
+          <picture>
+            <source
+              media="(max-width: 599px)"
+              srcset="assets/Hero_300x250.jpg"
+            />
+            <source
+              media="(max-width: 969px)"
+              srcset="assets/Hero_600x250.jpg"
+            />
+            <img
+              src="assets/Hero_970x250.jpg"
+              alt="Advertisement: Speedometer"
+            />
+          </picture>
         </div>
-    </body>
+        <div class="header-advertisement-notice">Advertisement</div>
+      </div>
+      <header class="header">
+        <div class="header-inner">
+          <div class="header-left">
+            <nav class="header-nav">
+              <input type="checkbox" id="header-nav-toggle" />
+              <label for="header-nav-toggle" class="header-nav-icon">
+                <svg
+                  class="header__menu-icon-svg"
+                  width="64"
+                  height="63"
+                  viewBox="0 0 64 63"
+                >
+                  <title>Menu Icon</title>
+                  <path
+                    d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"
+                  ></path>
+                  <path
+                    d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"
+                  ></path>
+                  <path
+                    d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"
+                  ></path>
+                </svg>
+              </label>
+              <div class="header-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <title>Logo Icon</title>
+                  <path
+                    d="M2 24h2.948c1-.923 2.004-2 3.55-2 1.547 0 2.55 1.077 3.55 2h2.948l-6.498-6-6.498 6zm20-8.042c0 3.269-5.858 3.387-9.787 1.79-6.835-2.779-9.629-9.79-7.817-15.17.84-2.496 1.852-3.84 6.333-.922 1.101.716 2.27 1.649 3.437 2.722l-1.72 1.152c-7.717-7.009-6.992-2.036-.983 4.55 5.858 6.417 11.668 8.615 5.767.717l1.199-1.745c1.223 1.634 3.571 4.873 3.571 6.906zm-1.026-12.437c-.004.829-.68 1.497-1.508 1.492-.225-.001-.436-.056-.628-.146l-3.829 5.646c-.784-.555-1.994-1.768-2.548-2.554l5.682-3.77c-.104-.207-.169-.437-.168-.684.005-.829.68-1.497 1.507-1.492.828.005 1.497.68 1.492 1.508z"
+                  />
+                </svg>
+              </div>
+              <ul class="header-nav-list">
+                <li class="header-nav-item">
+                  <a href="#">US</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">World</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Politics</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Business</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Opinion</a>
+                </li>
+                <li class="header-nav-item">
+                  <a href="#">Health</a>
+                </li>
+                <li class="header-nav-item">
+                  <div class="dropdown">
+                    <input
+                      type="checkbox"
+                      id="header-nav-dropdown-toggle"
+                      class="dropdown-toggle"
+                    />
+                    <label
+                      for="header-nav-dropdown-toggle"
+                      class="dropdown-label"
+                    >
+                      More
+                      <span class="arrow">
+                        <span class="left-bar"></span>
+                        <span class="right-bar"></span>
+                      </span>
+                    </label>
+                    <ul class="dropdown-content">
+                      <li class="header-nav-item">
+                        <a href="#">Entertainment</a>
+                      </li>
+                      <li class="header-nav-item">
+                        <a href="#">Style</a>
+                      </li>
+                      <li class="header-nav-item">
+                        <a href="#">Travel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-right">
+            <button class="header-button">Log In</button>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <h1 class="visually-hidden">Home Page</h1>
+        <section class="row">
+          <article class="column columns-3-balanced article">
+            <header class="article-header">
+              <a href="#"><h2>Lorem ipsum</h2></a>
+            </header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </h3>
+              <div class="article-content">
+                <ul class="article-list">
+                  <li class="article-list-item">
+                    Tincidunt praesent semper feugiat nibh sed pulvinar proin.
+                  </li>
+                  <li class="article-list-item">
+                    Ut enim blandit volutpat maecenas volutpat blandit aliquam
+                    etiam.
+                  </li>
+                  <li class="article-list-item">
+                    At auctor urna nunc id cursus metus aliquam.
+                  </li>
+                  <li class="article-list-item">
+                    Sed vulputate odio ut enim blandit volutpat.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-balanced article">
+            <header class="article-header">
+              <a href="#"><h2>Augue neque</h2></a>
+            </header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Augue neque gravida in fermentum et sollicitudin ac orci.
+              </h3>
+              <div class="article-content">
+                <ul class="article-list">
+                  <li class="article-list-item">
+                    Odio morbi quis commodo odio aenean sed adipiscing diam
+                    donec.
+                  </li>
+                  <li class="article-list-item">
+                    Consequat semper viverra nam libero justo laoreet sit.
+                  </li>
+                  <li class="article-list-item">
+                    Risus ultricies tristique nulla aliquet enim tortor at
+                    auctor.
+                  </li>
+                  <li class="article-list-item">
+                    Diam vulputate ut pharetra sit amet aliquam id diam
+                    maecenas.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-balanced article">
+            <header class="article-header">
+              <a href="#"><h2>Volutpat</h2></a>
+            </header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Volutpat est velit egestas dui id ornare arcu.
+              </h3>
+              <div class="article-content">
+                <ul class="article-list">
+                  <li class="article-list-item">
+                    Nibh mauris cursus mattis molestie. Varius vel pharetra vel
+                    turpis nunc eget lorem dolor.
+                  </li>
+                  <li class="article-list-item">
+                    Turpis egestas maecenas pharetra convallis posuere morbi leo
+                    urna molestie.
+                  </li>
+                  <li class="article-list-item">
+                    Enim blandit volutpat maecenas volutpat blandit aliquam
+                    etiam erat.
+                  </li>
+                  <li class="article-list-item">
+                    Fermentum dui faucibus in ornare. In hac habitasse platea
+                    dictumst vestibulum rhoncus est pellentesque elit.
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </article>
+        </section>
+        <section class="row">
+          <article class="column columns-3-wide article">
+            <header class="article-header"><h2>Nisi</h2></header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Nisi porta lorem mollis aliquam ut porttitor leo a.
+              </h3>
+              <div class="article-content">
+                Facilisis volutpat est velit egestas dui id ornare arcu odio.
+                Arcu dictum varius duis at consectetur. Consectetur adipiscing
+                elit pellentesque habitant morbi tristique senectus et netus.
+                Rutrum tellus pellentesque eu tincidunt tortor aliquam. Sit amet
+                dictum sit amet justo donec enim diam. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Sed augue lacus viverra
+                vitae congue eu consequat ac. Ullamcorper dignissim cras
+                tincidunt lobortis. In tellus integer feugiat scelerisque varius
+                morbi enim. Maecenas sed enim ut sem viverra aliquet eget sit.
+                Felis donec et odio pellentesque diam volutpat commodo.
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-narrow article">
+            <header class="article-header"><h2>Mauris</h2></header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+              </h3>
+              <div class="article-content">
+                Nec ullamcorper sit amet risus nullam eget felis eget. Amet
+                nulla facilisi morbi tempus iaculis urna id volutpat lacus. At
+                lectus urna duis convallis convallis tellus. Pulvinar neque
+                laoreet suspendisse interdum consectetur libero id. Mattis
+                pellentesque id nibh tortor id aliquet lectus proin. Euismod
+                quis viverra nibh cras pulvinar mattis nunc sed. Elementum
+                sagittis vitae et leo duis ut diam quam. Tincidunt ornare massa
+                eget egestas purus.
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-narrow article">
+            <header class="article-header">
+              <h2>Hendrerit</h2>
+            </header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title">
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+              </h3>
+              <div class="article-content">
+                Placerat vestibulum lectus mauris ultrices eros. Amet cursus sit
+                amet dictum. Ultricies lacus sed turpis tincidunt id aliquet
+                risus feugiat. Vulputate ut pharetra sit amet aliquam. Sit amet
+                dictum sit amet justo donec enim. Ipsum dolor sit amet
+                consectetur adipiscing elit. Sit amet consectetur adipiscing
+                elit duis tristique sollicitudin. Lorem dolor sed viverra ipsum.
+                Proin nibh nisl condimentum id venenatis a condimentum vitae
+                sapien. Rutrum quisque non tellus orci ac auctor augue mauris.
+              </div>
+            </section>
+          </article>
+        </section>
+        <section class="row">
+          <article class="column article">
+            <header class="article-header">
+              <h2>Latest Images</h2>
+            </header>
+            <section class="grid article-body">
+              <article class="grid-item">
+                <picture class="article-image">
+                  <img
+                    src="assets/placeholder_light.jpg"
+                    alt="Placeholder"
+                    width="1280"
+                    height="720"
+                  />
+                </picture>
+              </article>
+              <article class="grid-item">
+                <picture class="article-image">
+                  <img
+                    src="assets/placeholder_light.jpg"
+                    alt="Placeholder"
+                    width="1280"
+                    height="720"
+                  />
+                </picture>
+              </article>
+              <article class="grid-item">
+                <picture class="article-image">
+                  <img
+                    src="assets/placeholder_light.jpg"
+                    alt="Placeholder"
+                    width="1280"
+                    height="720"
+                  />
+                </picture>
+              </article>
+              <article class="grid-item">
+                <picture class="article-image">
+                  <img
+                    src="assets/placeholder_light.jpg"
+                    alt="Placeholder"
+                    width="1280"
+                    height="720"
+                  />
+                </picture>
+              </article>
+            </section>
+          </article>
+        </section>
+        <section class="row">
+          <article class="column columns-wrap article">
+            <header class="article-header">
+              <a href="#"><h2>Nulla</h2></a>
+            </header>
+            <section class="article-body">
+              <ul class="article-list">
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Mauris rhoncus aenean vel elit. Mauris in aliquam sem
+                    fringilla ut. Cras tincidunt lobortis feugiat vivamus at
+                    augue eget.
+                  </div>
+                </li>
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Mauris rhoncus aenean vel elit. Mauris in aliquam sem
+                    fringilla ut. Cras tincidunt lobortis feugiat vivamus at
+                    augue eget.
+                  </div>
+                </li>
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Mauris rhoncus aenean vel elit. Mauris in aliquam sem
+                    fringilla ut. Cras tincidunt lobortis feugiat vivamus at
+                    augue eget.
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </article>
+          <article class="column columns-wrap article">
+            <header class="article-header">
+              <a href="#"><h2>Ut lectus</h2></a>
+            </header>
+            <section class="article-body">
+              <ul class="article-list">
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Lobortis feugiat vivamus at augue eget. Aliquam malesuada
+                    bibendum arcu vitae elementum curabitur vitae nunc sed.
+                    Velit sed ullamcorper morbi tincidunt ornare massa eget.
+                  </div>
+                </li>
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Lobortis feugiat vivamus at augue eget. Aliquam malesuada
+                    bibendum arcu vitae elementum curabitur vitae nunc sed.
+                    Velit sed ullamcorper morbi tincidunt ornare massa eget.
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </article>
+          <article class="column columns-wrap article">
+            <header class="article-header">
+              <a href="#"><h2>Nec</h2></a>
+            </header>
+            <section class="article-body">
+              <ul class="article-list">
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Placerat in egestas erat imperdiet sed euismod nisi porta.
+                    Volutpat commodo sed egestas egestas fringilla phasellus
+                    faucibus scelerisque.
+                  </div>
+                </li>
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Placerat in egestas erat imperdiet sed euismod nisi porta.
+                    Volutpat commodo sed egestas egestas fringilla phasellus
+                    faucibus scelerisque.
+                  </div>
+                </li>
+                <li class="article-list-item">
+                  <div class="article-hero">
+                    <picture class="article-image">
+                      <img
+                        src="assets/placeholder_light.jpg"
+                        alt="Placeholder"
+                        width="1280"
+                        height="720"
+                      />
+                    </picture>
+                  </div>
+                  <div class="article-content">
+                    Placerat in egestas erat imperdiet sed euismod nisi porta.
+                    Volutpat commodo sed egestas egestas fringilla phasellus
+                    faucibus scelerisque.
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </article>
+        </section>
+      </main>
+      <footer>© 1997 No Rights Reserved.</footer>
+    </div>
+  </body>
 </html>

@@ -1,171 +1,171 @@
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .dropdown-toggle {
-    display: flex;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: calc(var(--nav-button-height) - 2px);
-    left: 0;
-    top: 1px;
-    z-index: 0;
+  display: flex;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(var(--nav-button-height) - 2px);
+  left: 0;
+  top: 1px;
+  z-index: 0;
 }
 
 .dropdown-label {
-    background-color: var(--theme-background-header);
-    color: var(--theme-copy-accent);
-    transition: color 0.3s ease;
-    height: var(--nav-button-height);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-    padding: 0 8px;
-    border-radius: 4px;
-    transition-property: color, background-color;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+  background-color: var(--theme-background-header);
+  color: var(--theme-copy-accent);
+  transition: color 0.3s ease;
+  height: var(--nav-button-height);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+  padding: 0 8px;
+  border-radius: 4px;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .dropdown-label:hover {
-    color: var(--theme-copy-accent-hover);
-    background-color: var(--theme-background-hover);
+  color: var(--theme-copy-accent-hover);
+  background-color: var(--theme-background-hover);
 }
 
 .arrow {
-    display: flex;
-    width: 16px;
-    height: 10px;
-    margin-left: 8px;
-    margin-top: 4px;
-    position: relative;
-    cursor: pointer;
+  display: flex;
+  width: 16px;
+  height: 10px;
+  margin-left: 8px;
+  margin-top: 4px;
+  position: relative;
+  cursor: pointer;
 }
 
 .left-bar {
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 8px;
-    height: 2px;
-    display: block;
-    transform: rotate(35deg);
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 8px;
+  height: 2px;
+  display: block;
+  transform: rotate(35deg);
 }
 
 .left-bar:after {
-    content: "";
-    background-color: #e6e6e6;
-    width: inherit;
-    height: inherit;
-    display: block;
-    transition: all 0.3s ease;
-    z-index: -1;
+  content: "";
+  background-color: #e6e6e6;
+  width: inherit;
+  height: inherit;
+  display: block;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .right-bar {
-    position: absolute;
-    top: 4px;
-    left: 6px;
-    width: 8px;
-    height: 2px;
-    display: block;
-    transform: rotate(-35deg);
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  transform: rotate(-35deg);
 }
 
 .right-bar:after {
-    content: "";
-    background-color: #e6e6e6;
-    width: inherit;
-    height: inherit;
-    display: block;
-    transition: all 0.3s ease;
-    z-index: -1;
+  content: "";
+  background-color: #e6e6e6;
+  width: inherit;
+  height: inherit;
+  display: block;
+  transition: all 0.3s ease;
+  z-index: -1;
 }
 
 .dropdown-toggle:checked ~ .dropdown-label .arrow .left-bar:after {
-    transform-origin: center center;
-    transform: rotate(-70deg);
+  transform-origin: center center;
+  transform: rotate(-70deg);
 }
 
 .dropdown-toggle:checked ~ .dropdown-label .arrow .right-bar:after {
-    transform-origin: center center;
-    transform: rotate(70deg);
+  transform-origin: center center;
+  transform: rotate(70deg);
 }
 
 .dropdown-content {
-    list-style-type: none;
-    padding: 0 8px;
-    margin: 0;
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: -8px;
-    min-width: 200px;
-    background-color: var(--theme-background-header);
-    z-index: 1;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  list-style-type: none;
+  padding: 0 8px;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -8px;
+  min-width: 200px;
+  background-color: var(--theme-background-header);
+  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-content .header-nav-item {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .dropdown-content .header-nav-item {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .dropdown-toggle:checked ~ .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .dropdown:hover .dropdown-button {
-    color: var(--theme-copy-accent-hover);
+  color: var(--theme-copy-accent-hover);
 }
 
 @media (max-width: 767px) {
-    .dropdown {
-        width: 100%;
-    }
+  .dropdown {
+    width: 100%;
+  }
 
-    .dropdown-toggle {
-        top: 0;
-        margin: var(--spacing-smaller);
-        width: calc(100% - var(--spacing-smaller) * 2);
-        height: var(--nav-button-height-mobile);
-    }
+  .dropdown-toggle {
+    top: 0;
+    margin: var(--spacing-smaller);
+    width: calc(100% - var(--spacing-smaller) * 2);
+    height: var(--nav-button-height-mobile);
+  }
 
-    .dropdown-label {
-        margin: var(--spacing-smaller);
-        /* offset right arrow to center text */
-        padding: 0 0 0 16px;
-        height: var(--nav-button-height-mobile);
-    }
+  .dropdown-label {
+    margin: var(--spacing-smaller);
+    /* offset right arrow to center text */
+    padding: 0 0 0 16px;
+    height: var(--nav-button-height-mobile);
+  }
 
-    .dropdown-content {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        box-shadow: none;
-        position: relative;
-        left: auto;
-        top: auto;
-        padding: 0;
-    }
+  .dropdown-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    box-shadow: none;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: 0;
+  }
 
-    .dropdown-content .header-nav-item {
-        margin-bottom: 0px;
-    }
+  .dropdown-content .header-nav-item {
+    margin-bottom: 0px;
+  }
 
-    .dropdown-content .header-nav-item a {
-        justify-content: center;
-    }
+  .dropdown-content .header-nav-item a {
+    justify-content: center;
+  }
 }
