@@ -22,7 +22,6 @@
   width: var(--icon-size);
   height: var(--icon-size);
   cursor: pointer;
-
   background-color: var(--theme-background-header);
   transition: var(--transition-default);
 }
@@ -84,7 +83,7 @@
   background-color: var(--theme-background-hover);
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   #header-nav-toggle,
   .header-nav-icon {
     display: flex;

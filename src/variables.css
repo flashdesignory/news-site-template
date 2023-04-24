@@ -1,37 +1,30 @@
 :root {
   --theme-background-header: #0c0c0c;
-  --theme-background-body: #ffffff;
+  --theme-background-body: #fff;
   --theme-divider: #404040;
   --theme-background-hover: #2c2c2c;
   --theme-article-border: #e6e6e6;
-  --theme-article-title-decorator: #cc0000;
-
+  --theme-article-title-decorator: #c00;
   --theme-copy-accent: #e6e6e6;
-  --theme-copy-accent-hover: #ffffff;
+  --theme-copy-accent-hover: #fff;
   --theme-copy-advertisement: #b1b1b1;
   --theme-copy-text: #0c0c0c;
-
   --spacing-tiny: 4px;
   --spacing-smaller: 8px;
   --spacing-small: 16px;
   --spacing-medium: 32px;
-
   --header-advertising-width: 970px;
   --header-advertising-height: 250px;
-
   --nav-height: 40px;
   --nav-button-height: 32px;
   --nav-button-height-mobile: 40px;
   --footer-height: 32px;
   --icon-size: 32px;
-
   --font-size-small: 12px;
   --font-size-medium: 16px;
   --font-size-large: 20px;
   --font-size-xl: 26px;
   --font-size-xxl: 32px;
-
   --transition-default: all 0.3s ease;
-
-  --font-family-default: Sans-serif;
+  --font-family-default: sans-serif;
 }

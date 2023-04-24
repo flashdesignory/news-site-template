@@ -54,6 +54,7 @@ but useful for people who use screen readers */
   flex-direction: column;
   width: 100%;
   z-index: 80;
+
   /* expand height if content is empty */
   flex: 1;
   background-color: var(--theme-background-body);
@@ -62,9 +63,8 @@ but useful for people who use screen readers */
 
 .row {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .column {
@@ -102,7 +102,7 @@ but useful for people who use screen readers */
   flex-direction: column;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .columns-3-balanced,
   .columns-3-wide,
   .columns-3-narrow,
@@ -111,7 +111,7 @@ but useful for people who use screen readers */
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (width >= 768px) and (width <= 1199px) {
   .columns-wrap {
     width: calc(50% - (var(--spacing-medium) / 2));
   }

@@ -8,8 +8,8 @@
   pointer-events: none;
 }
 
-.article-header:before,
-.article-header:after {
+.article-header::before,
+.article-header::after {
   content: "";
   display: block;
   position: absolute;
@@ -17,18 +17,18 @@
   top: 0;
 }
 
-.article-header:before {
+.article-header::before {
   background-color: var(--theme-article-title-decorator);
   width: var(--spacing-small);
   height: 4px;
   transition: var(--transition-default);
 }
 
-.article-header:hover:before {
+.article-header:hover::before {
   width: 100%;
 }
 
-.article-header:after {
+.article-header::after {
   border-top: 1px solid var(--theme-article-border);
   right: 0;
 }
