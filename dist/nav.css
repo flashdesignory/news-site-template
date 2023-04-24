@@ -1,0 +1,122 @@
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+#header-nav-toggle {
+    display: none;
+    border: 0;
+    position: absolute;
+    margin: 0;
+    width: calc(var(--icon-size) - 2px);
+    height: calc(var(--icon-size) - 2px);
+    left: 33px;
+    top: 5px;
+    z-index: -1;
+}
+
+.header-nav-icon {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    cursor: pointer;
+
+    background-color: var(--theme-background-header);
+    transition: var(--transition-default);
+}
+
+.header-nav-icon:hover {
+    background-color: var(--theme-background-hover);
+}
+
+.header-nav-icon svg path {
+    fill: var(--theme-copy-accent);
+    transition: var(--transition-default);
+}
+
+.header-nav-icon:hover svg path {
+    fill: var(--theme-copy-accent-hover);
+}
+
+.header-nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: var(--nav-button-height);
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: var(--spacing-small);
+}
+
+.header-nav-item a {
+    text-decoration: none;
+    color: var(--theme-copy-accent);
+    position: relative;
+    line-height: var(--nav-button-height);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    border-radius: 4px;
+    padding: 0 8px;
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.header-nav-item a:hover {
+    color: var(--theme-copy-accent-hover);
+    background-color: var(--theme-background-hover);
+}
+
+@media (max-width: 767px) {
+    #header-nav-toggle,
+    .header-nav-icon {
+        display: flex;
+    }
+
+    .header-nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: var(--nav-height);
+        background-color: var(--theme-background-header);
+        width: 100%;
+        border-top: 1px solid var(--theme-divider);
+    }
+
+    #header-nav-toggle:checked ~ .header-nav-list {
+        display: flex;
+    }
+
+    .header-nav-item {
+        height: var(--nav-button-height-mobile);
+    }
+
+    .header-nav-item a {
+        line-height: var(--nav-button-height-mobile);
+        margin: var(--spacing-smaller);
+        align-items: center;
+        padding: 0;
+    }
+
+    .header-nav-item:not(:last-child) {
+        margin-right: 0;
+    }
+}

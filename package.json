@@ -1,0 +1,13 @@
+{
+  "name": "news-site-template",
+  "version": "1.0.0",
+  "description": "News Site boilerplate",
+  "scripts": {
+    "dev": "http-server . -p 7002 -c-1 --cors -o",
+    "build": "node scripts/build.js",
+    "serve": "http-server ./dist -p 7003 --cors -o"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,29 @@
+.header-advertisement-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-shrink: 0;
+    background-color: var(--theme-background-header);
+    color: var(--theme-copy-advertisement);
+    z-index: 100;
+    overflow: hidden;
+}
+
+.header-advertisement-iframe {
+    display: flex;
+    width: var(--header-advertising-width);
+    height: var(--header-advertising-height);
+    margin: var(--spacing-tiny) 0;
+    position: relative;
+    justify-content: center;
+}
+
+.header-advertisement-notice {
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-small);
+    width: var(--header-advertising-width);
+    height: var(--font-size-small);
+}

@@ -1,0 +1,11 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: var(--footer-height);
+    font-size: var(--font-size-small);
+    background-color: var(--theme-background-header);
+    color: var(--theme-copy-advertisement);
+}
