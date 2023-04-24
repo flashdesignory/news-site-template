@@ -10,7 +10,7 @@
   margin: 0;
   width: calc(var(--icon-size) - 2px);
   height: calc(var(--icon-size) - 2px);
-  left: 33px;
+  left: 26px;
   top: 5px;
   z-index: -1;
 }

@@ -77,18 +77,19 @@ footer {
     flex-direction: column;
   }
 
-  .footer-center {
-    order: 1;
+  .footer-center,
+  .footer-left {
     padding-bottom: var(--spacing-small);
     margin-bottom: var(--spacing-small);
     border-bottom: 1px solid var(--theme-copy-advertisement);
   }
 
+  .footer-center {
+    order: 1;
+  }
+
   .footer-left {
     order: 2;
-    padding-bottom: var(--spacing-small);
-    margin-bottom: var(--spacing-small);
-    border-bottom: 1px solid var(--theme-copy-advertisement);
   }
 
   .footer-right {

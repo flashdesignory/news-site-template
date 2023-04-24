@@ -36,8 +36,8 @@
 
 .header-logo {
   display: flex;
-  width: 32px;
-  height: 32px;
+  width: var(--icon-size);
+  height: var(--icon-size);
   padding: 2px;
 }
 
@@ -57,4 +57,10 @@
 
 .header-button:hover {
   background-color: var(--theme-background-hover);
+}
+
+@media (width <= 767px) {
+  .header-logo {
+    margin-left: var(--spacing-smaller);
+  }
 }
