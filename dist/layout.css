@@ -14,6 +14,7 @@ body,
 .page {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* used for things that should be hidden in the ui,
@@ -102,7 +103,7 @@ but useful for people who use screen readers */
   flex-direction: column;
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   .columns-3-balanced,
   .columns-3-wide,
   .columns-3-narrow,
@@ -111,7 +112,7 @@ but useful for people who use screen readers */
   }
 }
 
-@media (width >= 768px) and (width <= 1199px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .columns-wrap {
     width: calc(50% - (var(--spacing-medium) / 2));
   }

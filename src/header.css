@@ -59,7 +59,7 @@
   background-color: var(--theme-background-hover);
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   .header-logo {
     margin-left: var(--spacing-smaller);
   }

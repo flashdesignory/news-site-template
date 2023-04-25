@@ -126,7 +126,7 @@
   color: var(--theme-copy-accent-hover);
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   .dropdown {
     width: 100%;
   }

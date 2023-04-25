@@ -89,7 +89,7 @@ footer {
   fill: var(--theme-copy-accent-hover);
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   footer {
     padding: var(--spacing-small) 0;
   }

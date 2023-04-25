@@ -83,7 +83,7 @@
   background-color: var(--theme-background-hover);
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   #header-nav-toggle,
   .header-nav-icon {
     display: flex;

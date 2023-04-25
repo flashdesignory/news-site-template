@@ -49,7 +49,7 @@
   fill: var(--theme-copy-text);
 }
 
-@media (width <= 767px) {
+@media (max-width: 767px) {
   .dialog {
     width: calc(100% - 40px * 2);
     left: 0;
