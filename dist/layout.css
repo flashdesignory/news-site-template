@@ -78,6 +78,10 @@ but useful for people who use screen readers */
   width: calc(33.33% - ((var(--spacing-medium) * 2) / 3));
 }
 
+.columns-4-balanced {
+  width: calc(25% - ((var(--spacing-medium) * 2) / 3));
+}
+
 .columns-3-wide {
   width: calc(50% - ((var(--spacing-medium) * 2) / 3));
 }
@@ -103,12 +107,23 @@ but useful for people who use screen readers */
   flex-direction: column;
 }
 
+.row-heading {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: var(--spacing-medium);
+  text-transform: uppercase;
+}
+
 @media (max-width: 767px) {
   .columns-3-balanced,
   .columns-3-wide,
   .columns-3-narrow,
   .columns-wrap {
     width: 100%;
+  }
+
+  .columns-4-balanced {
+    width: calc(50% - (var(--spacing-medium) / 2));
   }
 }
 
