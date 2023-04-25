@@ -107,12 +107,41 @@ but useful for people who use screen readers */
   flex-direction: column;
 }
 
+/* Headings start */
+.page-heading {
+  display: flex;
+  width: 100%;
+  font-size: 42px;
+  font-weight: bold;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--theme-copy-accent);
+  background-color: var(--theme-background-header);
+  z-index: 90;
+  padding: var(--spacing-medium) var(--spacing-medium) 0 var(--spacing-medium);
+}
+
+.page-heading .header-title {
+  display: flex;
+  flex-shrink: 1;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid var(--theme-divider);
+}
+
+.page-heading svg path {
+  fill: var(--theme-copy-accent);
+}
+
 .row-heading {
   font-size: var(--font-size-large);
   font-weight: bold;
   margin-bottom: var(--spacing-medium);
   text-transform: uppercase;
 }
+
+/* Headings end */
 
 @media (max-width: 767px) {
   .columns-3-balanced,
