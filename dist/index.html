@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="layout.css" />
     <link rel="stylesheet" href="text.css" />
     <link rel="stylesheet" href="dialog.css" />
+    <link rel="stylesheet" href="select.css" />
   </head>
   <body>
     <div class="page frontpage">
@@ -710,8 +711,30 @@
           </svg>
         </div>
       </a>
-      <div class="dialog-header"></div>
-      <div class="dialog-body"></div>
+      <header class="dialog-header"><h2>Settings</h2></header>
+      <section class="dialog-body">
+        <div class="select-container">
+          <label class="visually-hidden" for="select-language"
+            >Select Language</label
+          >
+          <select class="select" id="select-language">
+            <option class="option" value="english">English</option>
+            <option class="option" value="german">German</option>
+            <option class="option" value="french">French</option>
+          </select>
+        </div>
+
+        <div class="select-container">
+          <label class="visually-hidden" for="select-country"
+            >Select Country</label
+          >
+          <select class="select" id="select-country">
+            <option class="option" value="usa">USA</option>
+            <option class="option" value="de">Germany</option>
+            <option class="option" value="fr">France</option>
+          </select>
+        </div>
+      </section>
     </div>
   </body>
 </html>

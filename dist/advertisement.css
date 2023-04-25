@@ -15,7 +15,7 @@
 }
 
 .advertisement-container-article {
-  margin-bottom: 24px;
+  margin-bottom: var(--spacing-medium);
 }
 
 .advertisement-iframe {

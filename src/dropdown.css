@@ -113,7 +113,7 @@
 
 .dropdown-content .header-nav-item {
   margin-right: 0;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-smaller);
 }
 
 .dropdown-toggle:checked ~ .dropdown-content {
