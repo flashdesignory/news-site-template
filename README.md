@@ -6,4 +6,4 @@ HTML, CSS template for a generic news site.
 
 ## Screenshot
 
-![screenshot](./screenshot.png)
+![screenshot](./preview.png)
