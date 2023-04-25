@@ -28,8 +28,8 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  width: var(--icons-size);
-  height: var(--icons-size);
+  width: var(--icon-size-tiny);
+  height: var(--icon-size-tiny);
   display: flex;
 }
 
