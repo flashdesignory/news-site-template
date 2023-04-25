@@ -122,7 +122,7 @@ but useful for people who use screen readers */
   padding: var(--spacing-medium) var(--spacing-medium) 0 var(--spacing-medium);
 }
 
-.page-heading .header-title {
+.page-heading .page-title {
   display: flex;
   flex-shrink: 1;
   padding-bottom: 8px;
