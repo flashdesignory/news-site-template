@@ -32,9 +32,12 @@
 
 .dialog-icon {
   display: flex;
+  position: relative;
+}
+
+.dialog-icon svg {
   width: inherit;
   height: inherit;
-  position: relative;
 }
 
 .dialog-icon svg path {
