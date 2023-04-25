@@ -13,7 +13,6 @@
   height: calc(var(--nav-button-height) - 2px);
   left: 0;
   top: 1px;
-  z-index: 0;
 }
 
 .dropdown-label {
@@ -25,7 +24,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   position: relative;
   padding: 0 8px;
   border-radius: 4px;

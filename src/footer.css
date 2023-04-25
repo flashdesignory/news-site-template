@@ -49,14 +49,35 @@ footer {
   align-items: center;
 }
 
+.footer-icons li {
+  position: relative;
+}
+
 .footer-icons li:not(:last-child) {
   margin-right: var(--spacing-small);
 }
 
+#settings-toggle {
+  display: flex;
+  border: 0;
+  position: absolute;
+  margin: 0;
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
+  left: 0;
+  top: 0;
+}
+
+#settings-toggle:checked ~ .dialog {
+  display: flex;
+}
+
 .footer-icon {
   display: flex;
-  width: 24px;
-  height: 24px;
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
+  position: relative;
+  background-color: var(--theme-background-header);
 }
 
 .footer-icon svg path {

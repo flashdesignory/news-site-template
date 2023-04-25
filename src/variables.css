@@ -9,6 +9,7 @@
   --theme-copy-accent-hover: #fff;
   --theme-copy-advertisement: #b1b1b1;
   --theme-copy-text: #0c0c0c;
+  --theme-button-color: #6e6e6e;
   --theme-advertisement-icon-fill: #00aecd;
   --theme-advertisement-icon-background: #fff;
   --spacing-tiny: 4px;
@@ -24,6 +25,7 @@
   --nav-button-height-mobile: 40px;
   --footer-height: 32px;
   --icon-size: 32px;
+  --icon-size-small: 24px;
   --font-size-small: 12px;
   --font-size-medium: 16px;
   --font-size-large: 20px;
