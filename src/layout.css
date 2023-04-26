@@ -123,7 +123,7 @@ but useful for people who use screen readers */
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: var(--colors-utils-offwhite);
+  color: var(--color-utils-offwhite);
   background-color: var(--color-utils-black);
   z-index: 90;
   padding: var(--content-spacing-xlarge) var(--content-spacing-xlarge) 0
@@ -139,7 +139,7 @@ but useful for people who use screen readers */
 }
 
 .page-heading svg path {
-  fill: var(--colors-utils-offwhite);
+  fill: var(--color-utils-offwhite);
 }
 
 .row-heading {

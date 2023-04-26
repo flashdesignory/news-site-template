@@ -1,5 +1,6 @@
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -25,6 +26,10 @@ footer {
   position: relative;
 }
 
+.footer-row:not(:last-child) {
+  margin-bottom: var(--content-spacing-large);
+}
+
 .footer-column-left,
 .footer-column-center,
 .footer-column-right {
@@ -35,11 +40,16 @@ footer {
   align-items: center;
 }
 
+.footer-column-center {
+  flex: 1;
+}
+
 .footer-icons {
   display: flex;
 }
 
-.footer-icons ul {
+.footer-icons ul,
+.footer-links ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -48,11 +58,13 @@ footer {
   align-items: center;
 }
 
-.footer-icons li {
+.footer-icons li,
+.footer-links li {
   position: relative;
 }
 
-.footer-icons li:not(:last-child) {
+.footer-icons li:not(:last-child),
+.footer-links li:not(:last-child) {
   margin-right: var(--content-spacing-large);
 }
 
@@ -80,12 +92,22 @@ footer {
 }
 
 .footer-icon svg path {
-  fill: var(--colors-utils-offwhite);
+  fill: var(--color-utils-offwhite);
   transition: fill 0.3s ease;
 }
 
 .footer-icons li:hover .footer-icon svg path {
   fill: var(--color-utils-white);
+}
+
+.footer-links ul li a {
+  color: var(--color-utils-offwhite);
+  transition: fill 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  color: var(--color-utils-white);
 }
 
 @media (max-width: 767px) {
@@ -97,22 +119,36 @@ footer {
     flex-direction: column;
   }
 
-  .footer-column-center,
-  .footer-column-left {
+  .footer-row:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .footer-row:not(:last-child) .footer-column-center,
+  .footer-row:not(:last-child) .footer-column-left,
+  .footer-row:not(:last-child) .footer-column-right {
     padding-bottom: var(--content-spacing-large);
     margin-bottom: var(--content-spacing-large);
     border-bottom: 1px solid var(--color-utils-gray-lighter);
   }
 
-  .footer-column-center {
+  #footer-row-top .footer-column-center {
     order: 1;
   }
 
-  .footer-column-left {
+  #footer-row-top .footer-column-left {
     order: 2;
   }
 
-  .footer-column-right {
+  #footer-row-top .footer-column-right {
     order: 3;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+  }
+
+  .footer-links li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: var(--content-spacing-large);
   }
 }

@@ -9,7 +9,7 @@
 }
 
 .primary-button {
-  background-color: var(--colors-utils-offwhite);
+  background-color: var(--color-utils-offwhite);
   color: var(--color-utils-black);
 }
 
@@ -19,8 +19,8 @@
 }
 
 .secondary-button {
-  border: 1px solid var(--colors-utils-offwhite);
-  color: var(--colors-utils-offwhite);
+  border: 1px solid var(--color-utils-offwhite);
+  color: var(--color-utils-offwhite);
   background-color: transparent;
 }
 

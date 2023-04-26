@@ -17,7 +17,7 @@
 
 .dropdown-label {
   background-color: var(--color-utils-black);
-  color: var(--colors-utils-offwhite);
+  color: var(--color-utils-offwhite);
   transition: color 0.3s ease;
   height: var(--nav-button-height);
   cursor: pointer;
@@ -59,7 +59,7 @@
 
 .left-bar::after {
   content: "";
-  background-color: var(--colors-utils-offwhite);
+  background-color: var(--color-utils-offwhite);
   width: inherit;
   height: inherit;
   display: block;
@@ -79,7 +79,7 @@
 
 .right-bar::after {
   content: "";
-  background-color: var(--colors-utils-offwhite);
+  background-color: var(--color-utils-offwhite);
   width: inherit;
   height: inherit;
   display: block;
