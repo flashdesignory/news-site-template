@@ -105,8 +105,8 @@ but useful for people who use screen readers */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 16px;
-  row-gap: 16px;
+  column-gap: var(--content-spacing-xlarge);
+  row-gap: var(--content-spacing-xlarge);
 }
 
 .grid-item {
