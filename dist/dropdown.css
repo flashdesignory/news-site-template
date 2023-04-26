@@ -59,7 +59,7 @@
 
 .left-bar::after {
   content: "";
-  background-color: #e6e6e6;
+  background-color: var(--colors-utils-offwhite);
   width: inherit;
   height: inherit;
   display: block;
@@ -79,7 +79,7 @@
 
 .right-bar::after {
   content: "";
-  background-color: #e6e6e6;
+  background-color: var(--colors-utils-offwhite);
   width: inherit;
   height: inherit;
   display: block;
