@@ -56,7 +56,7 @@
 }
 
 .header-button:hover {
-  background-color: var(--theme-background-hover);
+  color: var(--theme-copy-accent-hover);
 }
 
 @media (max-width: 767px) {

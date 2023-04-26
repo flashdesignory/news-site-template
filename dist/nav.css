@@ -24,6 +24,8 @@
   cursor: pointer;
   background-color: var(--theme-background-header);
   transition: var(--transition-default);
+  border: 1px solid var(--theme-copy-accent);
+  border-radius: 4px;
 }
 
 .hamburger-icon {
@@ -39,6 +41,10 @@
   display: block;
   margin: 5px auto;
   transition: all 0.3s ease;
+}
+
+.hamburger-icon:hover span {
+  background-color: var(--theme-copy-accent-hover);
 }
 
 #header-nav-toggle:checked

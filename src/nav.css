@@ -24,6 +24,8 @@
   cursor: pointer;
   background-color: var(--theme-background-header);
   transition: var(--transition-default);
+  border: 1px solid var(--theme-copy-accent);
+  border-radius: 4px;
 }
 
 .hamburger-icon {
