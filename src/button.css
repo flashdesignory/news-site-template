@@ -5,6 +5,7 @@
   border-radius: var(--border-radius-small);
   transition: var(--transition-default);
   height: var(--nav-button-height);
+  padding: 0 var(--content-spacing-small);
 }
 
 .primary-button {
