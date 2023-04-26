@@ -5,17 +5,18 @@
   justify-content: flex-start;
   width: 100%;
   flex-shrink: 0;
-  color: var(--theme-advertisement-copy);
   z-index: 100;
   overflow: hidden;
 }
 
 .advertisement-container-header {
   background-color: var(--color-utils-black);
+  color: var(--color-utils-gray-lighter);
 }
 
 .advertisement-container-article {
   margin-bottom: var(--content-spacing-xlarge);
+  color: var(--color-utils-gray-dark);
 }
 
 .advertisement-iframe {

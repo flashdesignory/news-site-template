@@ -8,7 +8,7 @@ footer {
   padding: var(--content-spacing-small) 0;
   font-size: var(--font-size-small);
   background-color: var(--color-utils-black);
-  color: var(--theme-advertisement-copy);
+  color: var(--color-utils-gray-lighter);
 }
 
 .footer-inner {
@@ -101,7 +101,7 @@ footer {
   .footer-left {
     padding-bottom: var(--content-spacing-large);
     margin-bottom: var(--content-spacing-large);
-    border-bottom: 1px solid var(--theme-advertisement-copy);
+    border-bottom: 1px solid var(--color-utils-gray-lighter);
   }
 
   .footer-center {
