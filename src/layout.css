@@ -34,8 +34,8 @@ but useful for people who use screen readers */
 
 .page {
   font-size: var(--font-size-medium);
-  font-family: var(--font-family-default);
-  background-color: var(--theme-background-body);
+  font-family: var(--default-font-family);
+  background-color: var(--color-utils-white);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@ but useful for people who use screen readers */
   min-width: 300px;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: var(--spacing-xl);
-  padding-left: var(--spacing-xl);
-  padding-right: var(--spacing-xl);
+  padding-top: var(--content-spacing-xlarge);
+  padding-left: var(--content-spacing-xlarge);
+  padding-right: var(--content-spacing-xlarge);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -58,8 +58,8 @@ but useful for people who use screen readers */
 
   /* expand height if content is empty */
   flex: 1;
-  background-color: var(--theme-background-body);
-  color: var(--theme-copy-text);
+  background-color: var(--color-utils-white);
+  color: var(--color-utils-black);
 }
 
 .row {
@@ -71,27 +71,27 @@ but useful for people who use screen readers */
 .column {
   display: flex;
   flex-direction: column;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--content-spacing-xlarge);
 }
 
 .columns-3-balanced {
-  width: calc(33.33% - ((var(--spacing-xl) * 2) / 3));
+  width: calc(33.33% - ((var(--content-spacing-xlarge) * 2) / 3));
 }
 
 .columns-4-balanced {
-  width: calc(25% - ((var(--spacing-xl) * 2) / 3));
+  width: calc(25% - ((var(--content-spacing-xlarge) * 2) / 3));
 }
 
 .columns-3-wide {
-  width: calc(50% - ((var(--spacing-xl) * 2) / 3));
+  width: calc(50% - ((var(--content-spacing-xlarge) * 2) / 3));
 }
 
 .columns-3-narrow {
-  width: calc(25% - ((var(--spacing-xl) * 2) / 3));
+  width: calc(25% - ((var(--content-spacing-xlarge) * 2) / 3));
 }
 
 .columns-wrap {
-  width: calc(33.33% - ((var(--spacing-xl) * 2) / 3));
+  width: calc(33.33% - ((var(--content-spacing-xlarge) * 2) / 3));
   flex-wrap: wrap;
 }
 
@@ -116,10 +116,11 @@ but useful for people who use screen readers */
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: var(--theme-copy-accent);
-  background-color: var(--theme-background-header);
+  color: var(--colors-utils-offwhite);
+  background-color: var(--color-utils-black);
   z-index: 90;
-  padding: var(--spacing-xl) var(--spacing-xl) 0 var(--spacing-xl);
+  padding: var(--content-spacing-xlarge) var(--content-spacing-xlarge) 0
+    var(--content-spacing-xlarge);
 }
 
 .page-heading .page-title {
@@ -127,17 +128,17 @@ but useful for people who use screen readers */
   flex-shrink: 1;
   padding-bottom: 8px;
   margin-bottom: 16px;
-  border-bottom: 1px solid var(--theme-divider);
+  border-bottom: 1px solid var(--color-utils-gray);
 }
 
 .page-heading svg path {
-  fill: var(--theme-copy-accent);
+  fill: var(--colors-utils-offwhite);
 }
 
 .row-heading {
   font-size: var(--font-size-large);
   font-weight: bold;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--content-spacing-xlarge);
   text-transform: uppercase;
 }
 
@@ -152,12 +153,12 @@ but useful for people who use screen readers */
   }
 
   .columns-4-balanced {
-    width: calc(50% - (var(--spacing-xl) / 2));
+    width: calc(50% - (var(--content-spacing-xlarge) / 2));
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .columns-wrap {
-    width: calc(50% - (var(--spacing-xl) / 2));
+    width: calc(50% - (var(--content-spacing-xlarge) / 2));
   }
 }

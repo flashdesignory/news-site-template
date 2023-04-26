@@ -5,22 +5,22 @@
   justify-content: flex-start;
   width: 100%;
   flex-shrink: 0;
-  color: var(--theme-copy-advertisement);
+  color: var(--theme-advertisement-copy);
   z-index: 100;
   overflow: hidden;
 }
 
 .advertisement-container-header {
-  background-color: var(--theme-background-header);
+  background-color: var(--color-utils-black);
 }
 
 .advertisement-container-article {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--content-spacing-xlarge);
 }
 
 .advertisement-iframe {
   display: flex;
-  margin: var(--spacing-sx) 0;
+  margin: var(--content-spacing-xsmall) 0;
   position: relative;
   justify-content: center;
 }

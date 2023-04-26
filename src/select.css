@@ -10,9 +10,9 @@
 .select-container .select {
   outline: 0;
   padding: 8px;
-  border-radius: 8px;
-  border: 2px solid var(--theme-button-color);
-  color: var(--theme-copy-text);
+  border-radius: var(--border-radius-medium);
+  border: 2px solid var(--color-utils-gray-light);
+  color: var(--color-utils-black);
   transition: all 0.3s ease;
   font-family: inherit;
   font-size: inherit;
@@ -29,10 +29,10 @@
 }
 
 .select-container .select:hover {
-  border-color: var(--theme-copy-text);
-  color: var(--theme-button-color);
+  border-color: var(--color-utils-black);
+  color: var(--color-utils-gray-light);
 }
 
 .select-container .option {
-  color: var(--theme-copy-text);
+  color: var(--color-utils-black);
 }

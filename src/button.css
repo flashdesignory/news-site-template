@@ -1,21 +1,21 @@
 .primary-button {
-  background-color: var(--theme-copy-accent);
-  border-radius: 4px;
+  background-color: var(--colors-utils-offwhite);
+  border-radius: var(--border-radius-small);
   height: var(--nav-button-height);
-  color: var(--theme-copy-text);
+  color: var(--color-utils-black);
   transition: var(--transition-default);
   cursor: pointer;
 }
 
 .primary-button:hover {
-  background-color: var(--theme-copy-accent-hover);
-  color: var(--theme-button-color);
+  background-color: var(--color-utils-white);
+  color: var(--color-utils-gray-light);
 }
 
 .secondary-button {
-  border: 1px solid var(--theme-copy-accent);
-  color: var(--theme-copy-accent);
-  border-radius: 4px;
+  border: 1px solid var(--colors-utils-offwhite);
+  color: var(--colors-utils-offwhite);
+  border-radius: var(--border-radius-small);
   height: var(--nav-button-height);
   background-color: transparent;
   transition: var(--transition-default);
@@ -23,6 +23,6 @@
 }
 
 .secondary-button:hover {
-  border-color: var(--theme-copy-accent-hover);
-  color: var(--theme-copy-accent-hover);
+  border-color: var(--color-utils-white);
+  color: var(--color-utils-white);
 }

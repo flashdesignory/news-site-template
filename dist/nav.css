@@ -22,10 +22,10 @@
   width: var(--icon-size);
   height: var(--icon-size);
   cursor: pointer;
-  background-color: var(--theme-background-header);
+  background-color: var(--color-utils-black);
   transition: var(--transition-default);
-  border: 1px solid var(--theme-copy-accent);
-  border-radius: 4px;
+  border: 1px solid var(--colors-utils-offwhite);
+  border-radius: var(--border-radius-small);
 }
 
 .hamburger-icon {
@@ -37,14 +37,14 @@
 .hamburger-icon span {
   width: 24px;
   height: 4px;
-  background-color: var(--theme-copy-accent);
+  background-color: var(--colors-utils-offwhite);
   display: block;
   margin: 5px auto;
   transition: all 0.3s ease;
 }
 
 .hamburger-icon:hover span {
-  background-color: var(--theme-copy-accent-hover);
+  background-color: var(--color-utils-white);
 }
 
 #header-nav-toggle:checked
@@ -88,12 +88,12 @@
 }
 
 .header-nav-item:not(:last-child) {
-  margin-right: var(--spacing-l);
+  margin-right: var(--content-spacing-large);
 }
 
 .header-nav-item a {
   text-decoration: none;
-  color: var(--theme-copy-accent);
+  color: var(--colors-utils-offwhite);
   position: relative;
   line-height: var(--nav-button-height);
   display: flex;
@@ -101,7 +101,7 @@
   justify-content: center;
   align-items: flex-start;
   flex: 1;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
   padding: 0 8px;
   transition-property: color, background-color;
   transition-duration: 0.3s;
@@ -109,8 +109,8 @@
 }
 
 .header-nav-item a:hover {
-  color: var(--theme-copy-accent-hover);
-  background-color: var(--theme-background-hover);
+  color: var(--color-utils-white);
+  background-color: var(--color-utils-gray-dark);
 }
 
 @media (max-width: 767px) {
@@ -125,9 +125,9 @@
     position: absolute;
     left: 0;
     top: var(--nav-height);
-    background-color: var(--theme-background-header);
+    background-color: var(--color-utils-black);
     width: 100%;
-    border-top: 1px solid var(--theme-divider);
+    border-top: 1px solid var(--color-utils-gray);
   }
 
   #header-nav-toggle:checked ~ .header-nav-list {
@@ -140,7 +140,7 @@
 
   .header-nav-item a {
     line-height: var(--nav-button-height-mobile);
-    margin: var(--spacing-s);
+    margin: var(--content-spacing-small);
     align-items: center;
     padding: 0;
   }

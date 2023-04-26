@@ -9,11 +9,11 @@
   right: unset;
   background-color: white;
   z-index: 200;
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   box-shadow: 0 10px 18px #0006;
   display: none;
-  font-family: var(--font-family-default);
-  color: var(--theme-copy-text);
+  font-family: var(--default-font-family);
+  color: var(--color-utils-black);
 }
 
 .dialog:target {
@@ -21,13 +21,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: var(--spacing-xl);
+  padding: var(--content-spacing-xlarge);
 }
 
 .close-button {
   position: absolute;
-  top: var(--spacing-m);
-  right: var(--spacing-m);
+  top: var(--content-spacing-medium);
+  right: var(--content-spacing-medium);
   width: var(--icon-size-tiny);
   height: var(--icon-size-tiny);
   display: flex;
@@ -44,12 +44,12 @@
 }
 
 .dialog-icon svg path {
-  fill: var(--theme-copy-text);
+  fill: var(--color-utils-black);
   transition: fill 0.3s ease;
 }
 
 .close-button:hover svg path {
-  fill: var(--theme-button-color);
+  fill: var(--color-utils-gray-light);
 }
 
 .dialog-header {
@@ -59,7 +59,7 @@
   font-weight: bold;
   font-size: var(--font-size-medium);
   text-transform: uppercase;
-  margin-bottom: var(--spacing-l);
+  margin-bottom: var(--content-spacing-large);
   width: 100%;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .dialog-item:not(:last-child) {
-  margin-bottom: var(--spacing-l);
+  margin-bottom: var(--content-spacing-large);
 }
 
 @media (max-width: 767px) {

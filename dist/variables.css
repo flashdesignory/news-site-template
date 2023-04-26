@@ -1,23 +1,33 @@
 :root {
-  --theme-background-header: #0c0c0c;
-  --theme-background-body: #fff;
-  --theme-divider: #404040;
-  --theme-background-hover: #2c2c2c;
-  --theme-article-border: #e6e6e6;
-  --theme-article-title-decorator: #c00;
-  --theme-copy-accent: #e6e6e6;
-  --theme-copy-accent-hover: #fff;
-  --theme-copy-advertisement: #b1b1b1;
-  --theme-copy-text: #0c0c0c;
-  --theme-button-color: #6e6e6e;
+  /* colors */
+  --color-utils-red: #c00;
+  --color-utils-black: #0c0c0c;
+  --color-utils-white: #fff;
+  --color-utils-gray-dark: #2c2c2c;
+  --color-utils-gray: #404040;
+  --color-utils-gray-light: #6e6e6e;
+  --colors-utils-offwhite: #e6e6e6;
+  --theme-advertisement-copy: #b1b1b1;
   --theme-advertisement-icon-fill: #00aecd;
   --theme-advertisement-icon-background: #fff;
-  --spacing-sx: 4px;
-  --spacing-s: 8px;
-  --spacing-m: 12px;
-  --spacing-l: 16px;
-  --spacing-xl: 24px;
-  --spacing-xxl: 32px;
+
+  /* layout */
+  --border-radius-xsmall: 2px;
+  --border-radius-small: 4px;
+  --border-radius-medium: 8px;
+  --border-radius-large: 16px;
+  --border-radius-50: 50%;
+  --border-width-small: 1px;
+  --border-width-medium: 2px;
+  --border-width-large: 4px;
+  --content-spacing-xsmall: 4px;
+  --content-spacing-small: 8px;
+  --content-spacing-medium: 12px;
+  --content-spacing-large: 16px;
+  --content-spacing-xlarge: 24px;
+  --content-spacing-xxlarge: 32px;
+
+  /* dimensions */
   --header-advertising-width: 970px;
   --header-advertising-height: 250px;
   --article-advertising-width: 300px;
@@ -29,11 +39,18 @@
   --icon-size: 32px;
   --icon-size-small: 24px;
   --icon-size-tiny: 16px;
+
+  /* fonts */
   --font-size-small: 12px;
   --font-size-medium: 16px;
   --font-size-large: 20px;
-  --font-size-xl: 26px;
-  --font-size-xxl: 32px;
+  --font-size-xlarge: 26px;
+  --font-size-xxlarge: 32px;
+  --font-weight-less-bold: 400;
+  --font-weight-bold: 500;
+  --font-weight-more-bold: 600;
+  --default-font-family: sans-serif;
+
+  /* transitions */
   --transition-default: all 0.3s ease;
-  --font-family-default: sans-serif;
 }

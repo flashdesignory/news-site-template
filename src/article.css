@@ -3,8 +3,8 @@
   font-size: var(--font-size-small);
   text-transform: uppercase;
   position: relative;
-  padding-top: var(--spacing-s);
-  padding-bottom: var(--spacing-l);
+  padding-top: var(--content-spacing-small);
+  padding-bottom: var(--content-spacing-large);
   pointer-events: none;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .article-header::before {
-  background-color: var(--theme-article-title-decorator);
-  width: var(--spacing-l);
+  background-color: var(--color-utils-red);
+  width: var(--content-spacing-large);
   height: 4px;
   transition: var(--transition-default);
 }
@@ -29,14 +29,14 @@
 }
 
 .article-header::after {
-  border-top: 1px solid var(--theme-article-border);
+  border-top: 1px solid var(--colors-utils-offwhite);
   right: 0;
 }
 
 .article-header a {
   display: flex;
   text-decoration: none;
-  color: var(--theme-copy-text);
+  color: var(--color-utils-black);
   pointer-events: auto;
 }
 
@@ -63,8 +63,8 @@
   display: flex;
   flex-direction: row;
   font-weight: bold;
-  line-height: var(--font-size-xl);
-  margin-top: var(--spacing-l);
+  line-height: var(--font-size-xlarge);
+  margin-top: var(--content-spacing-large);
   font-size: var(--font-size-large);
 }
 
@@ -72,8 +72,8 @@
   display: flex;
   flex-direction: column;
   font-size: var(--font-size-medium);
-  line-height: var(--font-size-xl);
-  margin-top: var(--spacing-l);
+  line-height: var(--font-size-xlarge);
+  margin-top: var(--content-spacing-large);
 }
 
 .article-list {
@@ -91,9 +91,9 @@
 }
 
 .article-list-item:not(:last-child) {
-  margin-bottom: var(--spacing-m);
-  padding-bottom: var(--spacing-m);
-  border-bottom: 1px solid var(--theme-article-border);
+  margin-bottom: var(--content-spacing-medium);
+  padding-bottom: var(--content-spacing-medium);
+  border-bottom: 1px solid var(--colors-utils-offwhite);
 }
 
 .article-list-item .article-hero {
@@ -106,6 +106,6 @@
 
 .article-list-item .article-content {
   margin-top: 0;
-  margin-left: var(--spacing-l);
+  margin-left: var(--content-spacing-large);
   width: 66.66%;
 }
