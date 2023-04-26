@@ -1,0 +1,28 @@
+.primary-button {
+  background-color: var(--theme-copy-accent);
+  border-radius: 4px;
+  height: var(--nav-button-height);
+  color: var(--theme-copy-text);
+  transition: var(--transition-default);
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: var(--theme-copy-accent-hover);
+  color: var(--theme-button-color);
+}
+
+.secondary-button {
+  border: 1px solid var(--theme-copy-accent);
+  color: var(--theme-copy-accent);
+  border-radius: 4px;
+  height: var(--nav-button-height);
+  background-color: transparent;
+  transition: var(--transition-default);
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  border-color: var(--theme-copy-accent-hover);
+  color: var(--theme-copy-accent-hover);
+}
