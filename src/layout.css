@@ -32,6 +32,12 @@ but useful for people who use screen readers */
   white-space: nowrap;
 }
 
+/* Layout visualization */
+.preview {
+  min-height: 100px;
+  background: orange;
+}
+
 .page {
   font-size: var(--font-size-medium);
   font-family: var(--default-font-family);
@@ -72,6 +78,7 @@ but useful for people who use screen readers */
   display: flex;
   flex-direction: column;
   margin-bottom: var(--content-spacing-xlarge);
+  width: 100%;
 }
 
 .columns-3-balanced {

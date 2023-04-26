@@ -4,8 +4,7 @@ footer {
   align-items: center;
   flex-shrink: 0;
   width: 100%;
-
-  /* height: var(--footer-height); */
+  min-height: var(--footer-height);
   padding: var(--content-spacing-small) 0;
   font-size: var(--font-size-small);
   background-color: var(--color-utils-black);
