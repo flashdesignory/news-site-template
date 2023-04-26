@@ -130,7 +130,7 @@ but useful for people who use screen readers */
     var(--content-spacing-xlarge);
 }
 
-.page-heading .page-title {
+.page-heading .page-heading-title {
   display: flex;
   flex-shrink: 1;
   padding-bottom: 8px;
@@ -138,7 +138,7 @@ but useful for people who use screen readers */
   border-bottom: 1px solid var(--color-utils-gray);
 }
 
-.page-heading svg path {
+.page-heading-title svg path {
   fill: var(--color-utils-offwhite);
 }
 
