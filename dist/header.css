@@ -20,8 +20,8 @@
   max-width: 1440px;
   width: 100%;
   height: inherit;
-  padding-left: var(--spacing-medium);
-  padding-right: var(--spacing-medium);
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
   position: relative;
 }
 
@@ -61,6 +61,6 @@
 
 @media (max-width: 767px) {
   .header-logo {
-    margin-left: var(--spacing-smaller);
+    margin-left: var(--spacing-s);
   }
 }

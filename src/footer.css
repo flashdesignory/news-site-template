@@ -6,7 +6,7 @@ footer {
   width: 100%;
 
   /* height: var(--footer-height); */
-  padding: var(--spacing-smaller) 0;
+  padding: var(--spacing-s) 0;
   font-size: var(--font-size-small);
   background-color: var(--theme-background-header);
   color: var(--theme-copy-advertisement);
@@ -21,8 +21,8 @@ footer {
   max-width: 1440px;
   width: 100%;
   height: inherit;
-  padding-left: var(--spacing-medium);
-  padding-right: var(--spacing-medium);
+  padding-left: var(--spacing-xl);
+  padding-right: var(--spacing-xl);
   position: relative;
 }
 
@@ -54,7 +54,7 @@ footer {
 }
 
 .footer-icons li:not(:last-child) {
-  margin-right: var(--spacing-small);
+  margin-right: var(--spacing-l);
 }
 
 #settings-toggle {
@@ -91,7 +91,7 @@ footer {
 
 @media (max-width: 767px) {
   footer {
-    padding: var(--spacing-small) 0;
+    padding: var(--spacing-l) 0;
   }
 
   .footer-inner {
@@ -100,8 +100,8 @@ footer {
 
   .footer-center,
   .footer-left {
-    padding-bottom: var(--spacing-small);
-    margin-bottom: var(--spacing-small);
+    padding-bottom: var(--spacing-l);
+    margin-bottom: var(--spacing-l);
     border-bottom: 1px solid var(--theme-copy-advertisement);
   }
 

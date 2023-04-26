@@ -12,10 +12,12 @@
   --theme-button-color: #6e6e6e;
   --theme-advertisement-icon-fill: #00aecd;
   --theme-advertisement-icon-background: #fff;
-  --spacing-tiny: 4px;
-  --spacing-smaller: 8px;
-  --spacing-small: 16px;
-  --spacing-medium: 24px;
+  --spacing-sx: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
   --header-advertising-width: 970px;
   --header-advertising-height: 250px;
   --article-advertising-width: 300px;

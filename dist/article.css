@@ -3,8 +3,8 @@
   font-size: var(--font-size-small);
   text-transform: uppercase;
   position: relative;
-  padding-top: var(--spacing-smaller);
-  padding-bottom: var(--spacing-small);
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-l);
   pointer-events: none;
 }
 
@@ -19,7 +19,7 @@
 
 .article-header::before {
   background-color: var(--theme-article-title-decorator);
-  width: var(--spacing-small);
+  width: var(--spacing-l);
   height: 4px;
   transition: var(--transition-default);
 }
@@ -64,7 +64,7 @@
   flex-direction: row;
   font-weight: bold;
   line-height: var(--font-size-xl);
-  margin-top: var(--spacing-small);
+  margin-top: var(--spacing-l);
   font-size: var(--font-size-large);
 }
 
@@ -73,7 +73,7 @@
   flex-direction: column;
   font-size: var(--font-size-medium);
   line-height: var(--font-size-xl);
-  margin-top: var(--spacing-small);
+  margin-top: var(--spacing-l);
 }
 
 .article-list {
@@ -91,8 +91,8 @@
 }
 
 .article-list-item:not(:last-child) {
-  margin-bottom: 12px;
-  padding-bottom: 12px;
+  margin-bottom: var(--spacing-m);
+  padding-bottom: var(--spacing-m);
   border-bottom: 1px solid var(--theme-article-border);
 }
 
@@ -106,6 +106,6 @@
 
 .article-list-item .article-content {
   margin-top: 0;
-  margin-left: var(--spacing-small);
+  margin-left: var(--spacing-l);
   width: 66.66%;
 }

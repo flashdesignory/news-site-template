@@ -15,12 +15,12 @@
 }
 
 .advertisement-container-article {
-  margin-bottom: var(--spacing-medium);
+  margin-bottom: var(--spacing-xl);
 }
 
 .advertisement-iframe {
   display: flex;
-  margin: var(--spacing-tiny) 0;
+  margin: var(--spacing-sx) 0;
   position: relative;
   justify-content: center;
 }
