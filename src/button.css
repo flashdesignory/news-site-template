@@ -1,10 +1,15 @@
+.button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: var(--border-radius-small);
+  transition: var(--transition-default);
+  height: var(--nav-button-height);
+}
+
 .primary-button {
   background-color: var(--colors-utils-offwhite);
-  border-radius: var(--border-radius-small);
-  height: var(--nav-button-height);
   color: var(--color-utils-black);
-  transition: var(--transition-default);
-  cursor: pointer;
 }
 
 .primary-button:hover {
@@ -15,11 +20,7 @@
 .secondary-button {
   border: 1px solid var(--colors-utils-offwhite);
   color: var(--colors-utils-offwhite);
-  border-radius: var(--border-radius-small);
-  height: var(--nav-button-height);
   background-color: transparent;
-  transition: var(--transition-default);
-  cursor: pointer;
 }
 
 .secondary-button:hover {
