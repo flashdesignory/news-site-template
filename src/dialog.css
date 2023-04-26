@@ -70,6 +70,17 @@
   width: 100%;
 }
 
+.dialog-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dialog-item:not(:last-child) {
+  margin-bottom: var(--spacing-small);
+}
+
 @media (max-width: 767px) {
   .dialog {
     width: calc(100% - 40px * 2);

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="text.css" />
     <link rel="stylesheet" href="dialog.css" />
     <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="toggle.css" />
   </head>
   <body>
     <div class="page frontpage">
@@ -790,691 +791,707 @@
       </a>
       <header class="dialog-header"><h2>Settings</h2></header>
       <section class="dialog-body">
-        <div class="select-container">
-          <label class="visually-hidden" for="select-language"
-            >Select Language</label
-          >
-          <select class="select" id="select-language">
-            <option value="" disabled selected hidden>Select Language</option>
-            <option value="en">English</option>
-            <option value="de">Deutsch</option>
-            <option value="es">Español</option>
-            <option value="zh">中文</option>
-            <option value="ch">繁體中文</option>
-            <option value="fr">Français</option>
-            <option value="ja">日本語</option>
-            <option value="ko">한국어</option>
-            <option value="ru">Pусский</option>
-            <option value="it">Italiano</option>
-            <option value="pt">Portugues</option>
-            <option value="ar">العربية</option>
-          </select>
+        <div class="dialog-item">
+          <div class="select-container">
+            <label class="visually-hidden" for="select-language"
+              >Select Language</label
+            >
+            <select class="select" id="select-language">
+              <option value="" disabled selected hidden>Select Language</option>
+              <option value="en">English</option>
+              <option value="de">Deutsch</option>
+              <option value="es">Español</option>
+              <option value="zh">中文</option>
+              <option value="ch">繁體中文</option>
+              <option value="fr">Français</option>
+              <option value="ja">日本語</option>
+              <option value="ko">한국어</option>
+              <option value="ru">Pусский</option>
+              <option value="it">Italiano</option>
+              <option value="pt">Portugues</option>
+              <option value="ar">العربية</option>
+            </select>
+          </div>
         </div>
-
-        <div class="select-container">
-          <label class="visually-hidden" for="select-country"
-            >Select Country</label
-          >
-          <select class="select" id="select-country">
-            <option value="" disabled selected hidden>Select Country</option>
-            <option value="AF" data-currency="AFN" data-language="en">
-              Afghanistan
-            </option>
-            <option value="AL" data-currency="ALL" data-language="en">
-              Albania
-            </option>
-            <option value="DZ" data-currency="DZD" data-language="ar">
-              Algeria
-            </option>
-            <option value="AD" data-currency="EUR" data-language="en">
-              Andorra
-            </option>
-            <option value="AO" data-currency="AOA" data-language="en">
-              Angola
-            </option>
-            <option value="AI" data-currency="XCD" data-language="en">
-              Anguilla
-            </option>
-            <option value="AQ" data-currency="XXX" data-language="en">
-              Antarctica
-            </option>
-            <option value="AG" data-currency="XCD" data-language="en">
-              Antigua and Barbuda
-            </option>
-            <option value="AR" data-currency="ARS" data-language="es">
-              Argentina
-            </option>
-            <option value="AM" data-currency="AMD" data-language="en">
-              Armenia
-            </option>
-            <option value="AW" data-currency="AWG" data-language="en">
-              Aruba
-            </option>
-            <option value="AU" data-currency="AUD" data-language="en">
-              Australia
-            </option>
-            <option value="AT" data-currency="EUR" data-language="de">
-              Austria
-            </option>
-            <option value="AZ" data-currency="AZN" data-language="en">
-              Azerbaijan
-            </option>
-            <option value="BS" data-currency="BSD" data-language="en">
-              Bahamas
-            </option>
-            <option value="BH" data-currency="BHD" data-language="ar">
-              Bahrain
-            </option>
-            <option value="BD" data-currency="BDT" data-language="en">
-              Bangladesh
-            </option>
-            <option value="BB" data-currency="BBD" data-language="en">
-              Barbados
-            </option>
-            <option value="BE" data-currency="EUR" data-language="fr">
-              Belgium
-            </option>
-            <option value="BZ" data-currency="BZD" data-language="es">
-              Belize
-            </option>
-            <option value="BJ" data-currency="XOF" data-language="en">
-              Benin
-            </option>
-            <option value="BM" data-currency="BMD" data-language="en">
-              Bermuda
-            </option>
-            <option value="BT" data-currency="BTN" data-language="en">
-              Bhutan
-            </option>
-            <option value="BO" data-currency="BOB" data-language="en">
-              Bolivia
-            </option>
-            <option value="BA" data-currency="BAM" data-language="en">
-              Bosnia-Herzegovina
-            </option>
-            <option value="BW" data-currency="BWP" data-language="en">
-              Botswana
-            </option>
-            <option value="BV" data-currency="NOK" data-language="en">
-              Bouvet Island
-            </option>
-            <option value="BR" data-currency="BRL" data-language="pt">
-              Brazil
-            </option>
-            <option value="IO" data-currency="USD" data-language="en">
-              British Indian Ocean Terr.
-            </option>
-            <option value="VG" data-currency="USD" data-language="en">
-              British Virgin Islands
-            </option>
-            <option value="BN" data-currency="BND" data-language="en">
-              Brunei Darussalam
-            </option>
-            <option value="BG" data-currency="BGN" data-language="en">
-              Bulgaria
-            </option>
-            <option value="BF" data-currency="XOF" data-language="en">
-              Burkina Faso
-            </option>
-            <option value="BI" data-currency="BIF" data-language="en">
-              Burundi
-            </option>
-            <option value="KH" data-currency="KHR" data-language="en">
-              Cambodia
-            </option>
-            <option value="CM" data-currency="XAF" data-language="en">
-              Cameroon
-            </option>
-            <option value="CA" data-currency="CAD" data-language="en">
-              Canada
-            </option>
-            <option value="CV" data-currency="CVE" data-language="en">
-              Cape Verde
-            </option>
-            <option value="KY" data-currency="KYD" data-language="en">
-              Cayman Islands
-            </option>
-            <option value="CF" data-currency="XAF" data-language="en">
-              Central African Republic
-            </option>
-            <option value="TD" data-currency="XAF" data-language="ar">
-              Chad
-            </option>
-            <option value="CL" data-currency="CLP" data-language="es">
-              Chile
-            </option>
-            <option value="CN" data-currency="USD" data-language="zh">
-              China
-            </option>
-            <option value="CX" data-currency="AUD" data-language="en">
-              Christmas Island
-            </option>
-            <option value="CC" data-currency="AUD" data-language="en">
-              Cocos (Keeling) Islands
-            </option>
-            <option value="CO" data-currency="COP" data-language="es">
-              Colombia
-            </option>
-            <option value="KM" data-currency="KMF" data-language="ar">
-              Comoros
-            </option>
-            <option value="CK" data-currency="NZD" data-language="en">
-              Cook Islands
-            </option>
-            <option value="CR" data-currency="CRC" data-language="es">
-              Costa Rica
-            </option>
-            <option value="HR" data-currency="EUR" data-language="en">
-              Croatia
-            </option>
-            <option value="CY" data-currency="EUR" data-language="en">
-              Cyprus
-            </option>
-            <option value="CZ" data-currency="CZK" data-language="en">
-              Czech Republic
-            </option>
-            <option value="DK" data-currency="DKK" data-language="en">
-              Denmark
-            </option>
-            <option value="DJ" data-currency="DJF" data-language="ar">
-              Djibouti
-            </option>
-            <option value="DM" data-currency="XCD" data-language="en">
-              Dominica
-            </option>
-            <option value="DO" data-currency="DOP" data-language="en">
-              Dominican Republic
-            </option>
-            <option value="TL" data-currency="USD" data-language="en">
-              East Timor
-            </option>
-            <option value="EC" data-currency="USD" data-language="es">
-              Ecuador
-            </option>
-            <option value="EG" data-currency="EGP" data-language="ar">
-              Egypt
-            </option>
-            <option value="SV" data-currency="SVC" data-language="es">
-              El Salvador
-            </option>
-            <option value="GQ" data-currency="XAF" data-language="en">
-              Equatorial Guinea
-            </option>
-            <option value="ER" data-currency="ERN" data-language="en">
-              Eritrea
-            </option>
-            <option value="EE" data-currency="EUR" data-language="en">
-              Estonia
-            </option>
-            <option value="ET" data-currency="ETB" data-language="en">
-              Ethiopia
-            </option>
-            <option value="FK" data-currency="FKP" data-language="en">
-              Falkland Islands/Malvinas
-            </option>
-            <option value="FO" data-currency="DKK" data-language="en">
-              Faroe Islands
-            </option>
-            <option value="FJ" data-currency="FJD" data-language="en">
-              Fiji
-            </option>
-            <option value="FI" data-currency="EUR" data-language="en">
-              Finland
-            </option>
-            <option value="FR" data-currency="EUR" data-language="fr">
-              France
-            </option>
-            <option value="GF" data-currency="EUR" data-language="en">
-              French Guiana
-            </option>
-            <option value="PF" data-currency="XPF" data-language="en">
-              French Polynesia
-            </option>
-            <option value="TF" data-currency="EUR" data-language="en">
-              French Southern Terr.
-            </option>
-            <option value="GA" data-currency="XAF" data-language="en">
-              Gabon
-            </option>
-            <option value="GM" data-currency="GMD" data-language="en">
-              Gambia
-            </option>
-            <option value="GE" data-currency="GEL" data-language="en">
-              The Republic of Georgia
-            </option>
-            <option value="DE" data-currency="EUR" data-language="de">
-              Germany
-            </option>
-            <option value="GH" data-currency="GHS" data-language="en">
-              Ghana
-            </option>
-            <option value="GI" data-currency="GIP" data-language="en">
-              Gibraltar
-            </option>
-            <option value="GR" data-currency="EUR" data-language="en">
-              Greece
-            </option>
-            <option value="GL" data-currency="DKK" data-language="en">
-              Greenland
-            </option>
-            <option value="GD" data-currency="XCD" data-language="en">
-              Grenada
-            </option>
-            <option value="GP" data-currency="EUR" data-language="en">
-              Guadeloupe
-            </option>
-            <option value="GT" data-currency="GTQ" data-language="es">
-              Guatemala
-            </option>
-            <option value="GN" data-currency="GNF" data-language="en">
-              Guinea
-            </option>
-            <option value="GW" data-currency="XOF" data-language="en">
-              Guinea-Bissau
-            </option>
-            <option value="GY" data-currency="GYD" data-language="en">
-              Guyana
-            </option>
-            <option value="HT" data-currency="HTG" data-language="en">
-              Haiti
-            </option>
-            <option value="HM" data-currency="AUD" data-language="en">
-              Heard and McDonald Is.
-            </option>
-            <option value="HN" data-currency="HNL" data-language="es">
-              Honduras
-            </option>
-            <option value="HK" data-currency="USD" data-language="en">
-              Hong Kong, China
-            </option>
-            <option value="HU" data-currency="HUF" data-language="en">
-              Hungary
-            </option>
-            <option value="IS" data-currency="ISK" data-language="en">
-              Iceland
-            </option>
-            <option value="IN" data-currency="INR" data-language="en">
-              India
-            </option>
-            <option value="ID" data-currency="IDR" data-language="en">
-              Indonesia
-            </option>
-            <option value="IE" data-currency="EUR" data-language="en">
-              Ireland
-            </option>
-            <option value="IL" data-currency="ILS" data-language="en">
-              Israel
-            </option>
-            <option value="IT" data-currency="EUR" data-language="it">
-              Italy
-            </option>
-            <option value="JM" data-currency="JMD" data-language="en">
-              Jamaica
-            </option>
-            <option value="JP" data-currency="JPY" data-language="ja">
-              Japan
-            </option>
-            <option value="JO" data-currency="JOD" data-language="ar">
-              Jordan
-            </option>
-            <option value="KZ" data-currency="KZT" data-language="ru">
-              Kazakhstan
-            </option>
-            <option value="KE" data-currency="KES" data-language="en">
-              Kenya
-            </option>
-            <option value="KI" data-currency="AUD" data-language="en">
-              Kiribati
-            </option>
-            <option value="RS" data-currency="RSD" data-language="en">
-              Republic of Kosovo
-            </option>
-            <option value="KW" data-currency="KWD" data-language="ar">
-              Kuwait
-            </option>
-            <option value="KG" data-currency="KGS" data-language="en">
-              Kyrgyzstan
-            </option>
-            <option value="LA" data-currency="LAK" data-language="en">
-              Laos
-            </option>
-            <option value="LV" data-currency="EUR" data-language="en">
-              Latvia
-            </option>
-            <option value="LB" data-currency="USD" data-language="ar">
-              Lebanon
-            </option>
-            <option value="LS" data-currency="LSL" data-language="en">
-              Lesotho
-            </option>
-            <option value="LI" data-currency="CHF" data-language="en">
-              Liechtenstein
-            </option>
-            <option value="LT" data-currency="EUR" data-language="en">
-              Lithuania
-            </option>
-            <option value="LU" data-currency="EUR" data-language="en">
-              Luxembourg
-            </option>
-            <option value="MO" data-currency="MOP" data-language="en">
-              Macao, China
-            </option>
-            <option value="MK" data-currency="MKD" data-language="en">
-              Macedonia
-            </option>
-            <option value="MG" data-currency="MGA" data-language="en">
-              Madagascar
-            </option>
-            <option value="MW" data-currency="MWK" data-language="en">
-              Malawi
-            </option>
-            <option value="MY" data-currency="MYR" data-language="en">
-              Malaysia
-            </option>
-            <option value="MV" data-currency="MVR" data-language="en">
-              Maldives
-            </option>
-            <option value="ML" data-currency="XOF" data-language="en">
-              Mali
-            </option>
-            <option value="MT" data-currency="EUR" data-language="en">
-              Malta
-            </option>
-            <option value="MQ" data-currency="EUR" data-language="en">
-              Martinique
-            </option>
-            <option value="MR" data-currency="MRO" data-language="ar">
-              Mauritania
-            </option>
-            <option value="MU" data-currency="MUR" data-language="en">
-              Mauritius
-            </option>
-            <option value="YT" data-currency="EUR" data-language="en">
-              Mayotte
-            </option>
-            <option value="MX" data-currency="MXN" data-language="es">
-              Mexico
-            </option>
-            <option value="MD" data-currency="MDL" data-language="en">
-              Moldova
-            </option>
-            <option value="MC" data-currency="EUR" data-language="en">
-              Monaco
-            </option>
-            <option value="MN" data-currency="MNT" data-language="en">
-              Mongolia
-            </option>
-            <option value="ME" data-currency="EUR" data-language="en">
-              Montenegro
-            </option>
-            <option value="MS" data-currency="XCD" data-language="en">
-              Montserrat
-            </option>
-            <option value="MA" data-currency="MAD" data-language="ar">
-              Morocco
-            </option>
-            <option value="MZ" data-currency="MZN" data-language="en">
-              Mozambique
-            </option>
-            <option value="MM" data-currency="MMK" data-language="en">
-              Myanmar
-            </option>
-            <option value="NA" data-currency="NAD" data-language="en">
-              Namibia
-            </option>
-            <option value="NR" data-currency="AUD" data-language="en">
-              Nauru
-            </option>
-            <option value="NP" data-currency="NPR" data-language="en">
-              Nepal
-            </option>
-            <option value="NL" data-currency="EUR" data-language="en">
-              Netherlands
-            </option>
-            <option value="AN" data-currency="ANG" data-language="en">
-              Netherlands Antilles
-            </option>
-            <option value="CW" data-currency="ANG" data-language="en">
-              Curacao
-            </option>
-            <option value="SX" data-currency="ANG" data-language="en">
-              Sint Maarten
-            </option>
-            <option value="NC" data-currency="XPF" data-language="en">
-              New Caledonia
-            </option>
-            <option value="NZ" data-currency="NZD" data-language="en">
-              New Zealand
-            </option>
-            <option value="NI" data-currency="NIO" data-language="es">
-              Nicaragua
-            </option>
-            <option value="NE" data-currency="XOF" data-language="en">
-              Niger
-            </option>
-            <option value="NG" data-currency="NGN" data-language="en">
-              Nigeria
-            </option>
-            <option value="NU" data-currency="NZD" data-language="en">
-              Niue
-            </option>
-            <option value="NF" data-currency="AUD" data-language="en">
-              Norfolk Island
-            </option>
-            <option value="NO" data-currency="NOK" data-language="en">
-              Norway
-            </option>
-            <option value="OM" data-currency="OMR" data-language="ar">
-              Oman
-            </option>
-            <option value="PK" data-currency="PKR" data-language="en">
-              Pakistan
-            </option>
-            <option value="PA" data-currency="PAB" data-language="es">
-              Panama
-            </option>
-            <option value="PG" data-currency="PGK" data-language="en">
-              Papua New Guinea
-            </option>
-            <option value="PY" data-currency="PYG" data-language="es">
-              Paraguay
-            </option>
-            <option value="PE" data-currency="PEN" data-language="es">
-              Peru
-            </option>
-            <option value="PH" data-currency="PHP" data-language="en">
-              Philippines
-            </option>
-            <option value="PN" data-currency="NZD" data-language="en">
-              Pitcairn
-            </option>
-            <option value="PL" data-currency="PLN" data-language="en">
-              Poland
-            </option>
-            <option value="PT" data-currency="EUR" data-language="pt">
-              Portugal
-            </option>
-            <option value="QA" data-currency="QAR" data-language="ar">
-              Qatar
-            </option>
-            <option value="RE" data-currency="EUR" data-language="en">
-              Reunion
-            </option>
-            <option value="RO" data-currency="RON" data-language="en">
-              Romania
-            </option>
-            <option value="RU" data-currency="RUB" data-language="ru">
-              Russia
-            </option>
-            <option value="RW" data-currency="RWF" data-language="en">
-              Rwanda
-            </option>
-            <option value="KN" data-currency="XCD" data-language="en">
-              Saint Kitts and Nevis
-            </option>
-            <option value="LC" data-currency="XCD" data-language="en">
-              Saint Lucia
-            </option>
-            <option value="VC" data-currency="XCD" data-language="en">
-              St. Vincent and Grenadines
-            </option>
-            <option value="WS" data-currency="WST" data-language="en">
-              Samoa
-            </option>
-            <option value="SM" data-currency="EUR" data-language="en">
-              San Marino
-            </option>
-            <option value="ST" data-currency="STD" data-language="en">
-              Sao Tome and Principe
-            </option>
-            <option value="SA" data-currency="SAR" data-language="ar">
-              Saudi Arabia
-            </option>
-            <option value="SN" data-currency="XOF" data-language="en">
-              Senegal
-            </option>
-            <option value="RS" data-currency="RSD" data-language="en">
-              Serbia
-            </option>
-            <option value="SC" data-currency="SCR" data-language="en">
-              Republic of Seychelles
-            </option>
-            <option value="SL" data-currency="SLL" data-language="en">
-              Sierra Leone
-            </option>
-            <option value="SG" data-currency="SGD" data-language="en">
-              Singapore
-            </option>
-            <option value="SK" data-currency="EUR" data-language="en">
-              Slovak Republic
-            </option>
-            <option value="SI" data-currency="EUR" data-language="en">
-              Slovenia
-            </option>
-            <option value="SB" data-currency="SBD" data-language="en">
-              Solomon Islands
-            </option>
-            <option value="ZA" data-currency="ZAR" data-language="en">
-              South Africa
-            </option>
-            <option value="GS" data-currency="GBP" data-language="en">
-              S.Georgia and S.Sandwich Is.
-            </option>
-            <option value="KR" data-currency="USD" data-language="ko">
-              South Korea
-            </option>
-            <option value="ES" data-currency="EUR" data-language="es">
-              Spain
-            </option>
-            <option value="LK" data-currency="LKR" data-language="en">
-              Sri Lanka
-            </option>
-            <option value="SH" data-currency="SHP" data-language="en">
-              St. Helena
-            </option>
-            <option value="PM" data-currency="EUR" data-language="en">
-              St. Pierre and Miquelon
-            </option>
-            <option value="SR" data-currency="SRD" data-language="en">
-              Suriname
-            </option>
-            <option value="SJ" data-currency="NOK" data-language="en">
-              Svalbard and Jan Mayen Is.
-            </option>
-            <option value="SZ" data-currency="SZL" data-language="en">
-              Swaziland
-            </option>
-            <option value="SE" data-currency="SEK" data-language="en">
-              Sweden
-            </option>
-            <option value="CH" data-currency="CHF" data-language="de">
-              Switzerland
-            </option>
-            <option value="TW" data-currency="TWD" data-language="ch">
-              Taiwan Region
-            </option>
-            <option value="TJ" data-currency="TJS" data-language="en">
-              Tajikistan
-            </option>
-            <option value="TZ" data-currency="TZS" data-language="en">
-              Tanzania
-            </option>
-            <option value="TH" data-currency="THB" data-language="en">
-              Thailand
-            </option>
-            <option value="TG" data-currency="XOF" data-language="en">
-              Togo
-            </option>
-            <option value="TK" data-currency="NZD" data-language="en">
-              Tokelau
-            </option>
-            <option value="TO" data-currency="TOP" data-language="en">
-              Tonga
-            </option>
-            <option value="TT" data-currency="TTD" data-language="en">
-              Trinidad and Tobago
-            </option>
-            <option value="TN" data-currency="TND" data-language="ar">
-              Tunisia
-            </option>
-            <option value="TR" data-currency="TRY" data-language="en">
-              Turkey
-            </option>
-            <option value="TM" data-currency="TMT" data-language="en">
-              Turkmenistan
-            </option>
-            <option value="TC" data-currency="USD" data-language="en">
-              Turks and Caicos Islands
-            </option>
-            <option value="TV" data-currency="AUD" data-language="en">
-              Tuvalu
-            </option>
-            <option value="UG" data-currency="UGX" data-language="en">
-              Uganda
-            </option>
-            <option value="UA" data-currency="UAH" data-language="ru">
-              Ukraine
-            </option>
-            <option value="AE" data-currency="AED" data-language="en">
-              United Arab Emirates
-            </option>
-            <option value="GB" data-currency="GBP" data-language="en">
-              United Kingdom
-            </option>
-            <option value="UY" data-currency="UYU" data-language="es">
-              Uruguay
-            </option>
-            <option value="US" data-currency="USD" data-language="en">
-              US
-            </option>
-            <option value="UZ" data-currency="UZS" data-language="en">
-              Uzbekistan
-            </option>
-            <option value="VU" data-currency="VUV" data-language="en">
-              Vanuatu
-            </option>
-            <option value="VA" data-currency="EUR" data-language="en">
-              Vatican (Holy See)
-            </option>
-            <option value="VE" data-currency="VEF" data-language="en">
-              Venezuela
-            </option>
-            <option value="VN" data-currency="VND" data-language="en">
-              Vietnam
-            </option>
-            <option value="WF" data-currency="XPF" data-language="en">
-              Wallis and Futuna Is.
-            </option>
-            <option value="EH" data-currency="MAD" data-language="en">
-              Western Sahara
-            </option>
-            <option value="CD" data-currency="CDF" data-language="en">
-              Zaire
-            </option>
-            <option value="ZM" data-currency="ZMW" data-language="en">
-              Zambia
-            </option>
-          </select>
+        <div class="dialog-item">
+          <div class="select-container">
+            <label class="visually-hidden" for="select-country"
+              >Select Country</label
+            >
+            <select class="select" id="select-country">
+              <option value="" disabled selected hidden>Select Country</option>
+              <option value="AF" data-currency="AFN" data-language="en">
+                Afghanistan
+              </option>
+              <option value="AL" data-currency="ALL" data-language="en">
+                Albania
+              </option>
+              <option value="DZ" data-currency="DZD" data-language="ar">
+                Algeria
+              </option>
+              <option value="AD" data-currency="EUR" data-language="en">
+                Andorra
+              </option>
+              <option value="AO" data-currency="AOA" data-language="en">
+                Angola
+              </option>
+              <option value="AI" data-currency="XCD" data-language="en">
+                Anguilla
+              </option>
+              <option value="AQ" data-currency="XXX" data-language="en">
+                Antarctica
+              </option>
+              <option value="AG" data-currency="XCD" data-language="en">
+                Antigua and Barbuda
+              </option>
+              <option value="AR" data-currency="ARS" data-language="es">
+                Argentina
+              </option>
+              <option value="AM" data-currency="AMD" data-language="en">
+                Armenia
+              </option>
+              <option value="AW" data-currency="AWG" data-language="en">
+                Aruba
+              </option>
+              <option value="AU" data-currency="AUD" data-language="en">
+                Australia
+              </option>
+              <option value="AT" data-currency="EUR" data-language="de">
+                Austria
+              </option>
+              <option value="AZ" data-currency="AZN" data-language="en">
+                Azerbaijan
+              </option>
+              <option value="BS" data-currency="BSD" data-language="en">
+                Bahamas
+              </option>
+              <option value="BH" data-currency="BHD" data-language="ar">
+                Bahrain
+              </option>
+              <option value="BD" data-currency="BDT" data-language="en">
+                Bangladesh
+              </option>
+              <option value="BB" data-currency="BBD" data-language="en">
+                Barbados
+              </option>
+              <option value="BE" data-currency="EUR" data-language="fr">
+                Belgium
+              </option>
+              <option value="BZ" data-currency="BZD" data-language="es">
+                Belize
+              </option>
+              <option value="BJ" data-currency="XOF" data-language="en">
+                Benin
+              </option>
+              <option value="BM" data-currency="BMD" data-language="en">
+                Bermuda
+              </option>
+              <option value="BT" data-currency="BTN" data-language="en">
+                Bhutan
+              </option>
+              <option value="BO" data-currency="BOB" data-language="en">
+                Bolivia
+              </option>
+              <option value="BA" data-currency="BAM" data-language="en">
+                Bosnia-Herzegovina
+              </option>
+              <option value="BW" data-currency="BWP" data-language="en">
+                Botswana
+              </option>
+              <option value="BV" data-currency="NOK" data-language="en">
+                Bouvet Island
+              </option>
+              <option value="BR" data-currency="BRL" data-language="pt">
+                Brazil
+              </option>
+              <option value="IO" data-currency="USD" data-language="en">
+                British Indian Ocean Terr.
+              </option>
+              <option value="VG" data-currency="USD" data-language="en">
+                British Virgin Islands
+              </option>
+              <option value="BN" data-currency="BND" data-language="en">
+                Brunei Darussalam
+              </option>
+              <option value="BG" data-currency="BGN" data-language="en">
+                Bulgaria
+              </option>
+              <option value="BF" data-currency="XOF" data-language="en">
+                Burkina Faso
+              </option>
+              <option value="BI" data-currency="BIF" data-language="en">
+                Burundi
+              </option>
+              <option value="KH" data-currency="KHR" data-language="en">
+                Cambodia
+              </option>
+              <option value="CM" data-currency="XAF" data-language="en">
+                Cameroon
+              </option>
+              <option value="CA" data-currency="CAD" data-language="en">
+                Canada
+              </option>
+              <option value="CV" data-currency="CVE" data-language="en">
+                Cape Verde
+              </option>
+              <option value="KY" data-currency="KYD" data-language="en">
+                Cayman Islands
+              </option>
+              <option value="CF" data-currency="XAF" data-language="en">
+                Central African Republic
+              </option>
+              <option value="TD" data-currency="XAF" data-language="ar">
+                Chad
+              </option>
+              <option value="CL" data-currency="CLP" data-language="es">
+                Chile
+              </option>
+              <option value="CN" data-currency="USD" data-language="zh">
+                China
+              </option>
+              <option value="CX" data-currency="AUD" data-language="en">
+                Christmas Island
+              </option>
+              <option value="CC" data-currency="AUD" data-language="en">
+                Cocos (Keeling) Islands
+              </option>
+              <option value="CO" data-currency="COP" data-language="es">
+                Colombia
+              </option>
+              <option value="KM" data-currency="KMF" data-language="ar">
+                Comoros
+              </option>
+              <option value="CK" data-currency="NZD" data-language="en">
+                Cook Islands
+              </option>
+              <option value="CR" data-currency="CRC" data-language="es">
+                Costa Rica
+              </option>
+              <option value="HR" data-currency="EUR" data-language="en">
+                Croatia
+              </option>
+              <option value="CY" data-currency="EUR" data-language="en">
+                Cyprus
+              </option>
+              <option value="CZ" data-currency="CZK" data-language="en">
+                Czech Republic
+              </option>
+              <option value="DK" data-currency="DKK" data-language="en">
+                Denmark
+              </option>
+              <option value="DJ" data-currency="DJF" data-language="ar">
+                Djibouti
+              </option>
+              <option value="DM" data-currency="XCD" data-language="en">
+                Dominica
+              </option>
+              <option value="DO" data-currency="DOP" data-language="en">
+                Dominican Republic
+              </option>
+              <option value="TL" data-currency="USD" data-language="en">
+                East Timor
+              </option>
+              <option value="EC" data-currency="USD" data-language="es">
+                Ecuador
+              </option>
+              <option value="EG" data-currency="EGP" data-language="ar">
+                Egypt
+              </option>
+              <option value="SV" data-currency="SVC" data-language="es">
+                El Salvador
+              </option>
+              <option value="GQ" data-currency="XAF" data-language="en">
+                Equatorial Guinea
+              </option>
+              <option value="ER" data-currency="ERN" data-language="en">
+                Eritrea
+              </option>
+              <option value="EE" data-currency="EUR" data-language="en">
+                Estonia
+              </option>
+              <option value="ET" data-currency="ETB" data-language="en">
+                Ethiopia
+              </option>
+              <option value="FK" data-currency="FKP" data-language="en">
+                Falkland Islands/Malvinas
+              </option>
+              <option value="FO" data-currency="DKK" data-language="en">
+                Faroe Islands
+              </option>
+              <option value="FJ" data-currency="FJD" data-language="en">
+                Fiji
+              </option>
+              <option value="FI" data-currency="EUR" data-language="en">
+                Finland
+              </option>
+              <option value="FR" data-currency="EUR" data-language="fr">
+                France
+              </option>
+              <option value="GF" data-currency="EUR" data-language="en">
+                French Guiana
+              </option>
+              <option value="PF" data-currency="XPF" data-language="en">
+                French Polynesia
+              </option>
+              <option value="TF" data-currency="EUR" data-language="en">
+                French Southern Terr.
+              </option>
+              <option value="GA" data-currency="XAF" data-language="en">
+                Gabon
+              </option>
+              <option value="GM" data-currency="GMD" data-language="en">
+                Gambia
+              </option>
+              <option value="GE" data-currency="GEL" data-language="en">
+                The Republic of Georgia
+              </option>
+              <option value="DE" data-currency="EUR" data-language="de">
+                Germany
+              </option>
+              <option value="GH" data-currency="GHS" data-language="en">
+                Ghana
+              </option>
+              <option value="GI" data-currency="GIP" data-language="en">
+                Gibraltar
+              </option>
+              <option value="GR" data-currency="EUR" data-language="en">
+                Greece
+              </option>
+              <option value="GL" data-currency="DKK" data-language="en">
+                Greenland
+              </option>
+              <option value="GD" data-currency="XCD" data-language="en">
+                Grenada
+              </option>
+              <option value="GP" data-currency="EUR" data-language="en">
+                Guadeloupe
+              </option>
+              <option value="GT" data-currency="GTQ" data-language="es">
+                Guatemala
+              </option>
+              <option value="GN" data-currency="GNF" data-language="en">
+                Guinea
+              </option>
+              <option value="GW" data-currency="XOF" data-language="en">
+                Guinea-Bissau
+              </option>
+              <option value="GY" data-currency="GYD" data-language="en">
+                Guyana
+              </option>
+              <option value="HT" data-currency="HTG" data-language="en">
+                Haiti
+              </option>
+              <option value="HM" data-currency="AUD" data-language="en">
+                Heard and McDonald Is.
+              </option>
+              <option value="HN" data-currency="HNL" data-language="es">
+                Honduras
+              </option>
+              <option value="HK" data-currency="USD" data-language="en">
+                Hong Kong, China
+              </option>
+              <option value="HU" data-currency="HUF" data-language="en">
+                Hungary
+              </option>
+              <option value="IS" data-currency="ISK" data-language="en">
+                Iceland
+              </option>
+              <option value="IN" data-currency="INR" data-language="en">
+                India
+              </option>
+              <option value="ID" data-currency="IDR" data-language="en">
+                Indonesia
+              </option>
+              <option value="IE" data-currency="EUR" data-language="en">
+                Ireland
+              </option>
+              <option value="IL" data-currency="ILS" data-language="en">
+                Israel
+              </option>
+              <option value="IT" data-currency="EUR" data-language="it">
+                Italy
+              </option>
+              <option value="JM" data-currency="JMD" data-language="en">
+                Jamaica
+              </option>
+              <option value="JP" data-currency="JPY" data-language="ja">
+                Japan
+              </option>
+              <option value="JO" data-currency="JOD" data-language="ar">
+                Jordan
+              </option>
+              <option value="KZ" data-currency="KZT" data-language="ru">
+                Kazakhstan
+              </option>
+              <option value="KE" data-currency="KES" data-language="en">
+                Kenya
+              </option>
+              <option value="KI" data-currency="AUD" data-language="en">
+                Kiribati
+              </option>
+              <option value="RS" data-currency="RSD" data-language="en">
+                Republic of Kosovo
+              </option>
+              <option value="KW" data-currency="KWD" data-language="ar">
+                Kuwait
+              </option>
+              <option value="KG" data-currency="KGS" data-language="en">
+                Kyrgyzstan
+              </option>
+              <option value="LA" data-currency="LAK" data-language="en">
+                Laos
+              </option>
+              <option value="LV" data-currency="EUR" data-language="en">
+                Latvia
+              </option>
+              <option value="LB" data-currency="USD" data-language="ar">
+                Lebanon
+              </option>
+              <option value="LS" data-currency="LSL" data-language="en">
+                Lesotho
+              </option>
+              <option value="LI" data-currency="CHF" data-language="en">
+                Liechtenstein
+              </option>
+              <option value="LT" data-currency="EUR" data-language="en">
+                Lithuania
+              </option>
+              <option value="LU" data-currency="EUR" data-language="en">
+                Luxembourg
+              </option>
+              <option value="MO" data-currency="MOP" data-language="en">
+                Macao, China
+              </option>
+              <option value="MK" data-currency="MKD" data-language="en">
+                Macedonia
+              </option>
+              <option value="MG" data-currency="MGA" data-language="en">
+                Madagascar
+              </option>
+              <option value="MW" data-currency="MWK" data-language="en">
+                Malawi
+              </option>
+              <option value="MY" data-currency="MYR" data-language="en">
+                Malaysia
+              </option>
+              <option value="MV" data-currency="MVR" data-language="en">
+                Maldives
+              </option>
+              <option value="ML" data-currency="XOF" data-language="en">
+                Mali
+              </option>
+              <option value="MT" data-currency="EUR" data-language="en">
+                Malta
+              </option>
+              <option value="MQ" data-currency="EUR" data-language="en">
+                Martinique
+              </option>
+              <option value="MR" data-currency="MRO" data-language="ar">
+                Mauritania
+              </option>
+              <option value="MU" data-currency="MUR" data-language="en">
+                Mauritius
+              </option>
+              <option value="YT" data-currency="EUR" data-language="en">
+                Mayotte
+              </option>
+              <option value="MX" data-currency="MXN" data-language="es">
+                Mexico
+              </option>
+              <option value="MD" data-currency="MDL" data-language="en">
+                Moldova
+              </option>
+              <option value="MC" data-currency="EUR" data-language="en">
+                Monaco
+              </option>
+              <option value="MN" data-currency="MNT" data-language="en">
+                Mongolia
+              </option>
+              <option value="ME" data-currency="EUR" data-language="en">
+                Montenegro
+              </option>
+              <option value="MS" data-currency="XCD" data-language="en">
+                Montserrat
+              </option>
+              <option value="MA" data-currency="MAD" data-language="ar">
+                Morocco
+              </option>
+              <option value="MZ" data-currency="MZN" data-language="en">
+                Mozambique
+              </option>
+              <option value="MM" data-currency="MMK" data-language="en">
+                Myanmar
+              </option>
+              <option value="NA" data-currency="NAD" data-language="en">
+                Namibia
+              </option>
+              <option value="NR" data-currency="AUD" data-language="en">
+                Nauru
+              </option>
+              <option value="NP" data-currency="NPR" data-language="en">
+                Nepal
+              </option>
+              <option value="NL" data-currency="EUR" data-language="en">
+                Netherlands
+              </option>
+              <option value="AN" data-currency="ANG" data-language="en">
+                Netherlands Antilles
+              </option>
+              <option value="CW" data-currency="ANG" data-language="en">
+                Curacao
+              </option>
+              <option value="SX" data-currency="ANG" data-language="en">
+                Sint Maarten
+              </option>
+              <option value="NC" data-currency="XPF" data-language="en">
+                New Caledonia
+              </option>
+              <option value="NZ" data-currency="NZD" data-language="en">
+                New Zealand
+              </option>
+              <option value="NI" data-currency="NIO" data-language="es">
+                Nicaragua
+              </option>
+              <option value="NE" data-currency="XOF" data-language="en">
+                Niger
+              </option>
+              <option value="NG" data-currency="NGN" data-language="en">
+                Nigeria
+              </option>
+              <option value="NU" data-currency="NZD" data-language="en">
+                Niue
+              </option>
+              <option value="NF" data-currency="AUD" data-language="en">
+                Norfolk Island
+              </option>
+              <option value="NO" data-currency="NOK" data-language="en">
+                Norway
+              </option>
+              <option value="OM" data-currency="OMR" data-language="ar">
+                Oman
+              </option>
+              <option value="PK" data-currency="PKR" data-language="en">
+                Pakistan
+              </option>
+              <option value="PA" data-currency="PAB" data-language="es">
+                Panama
+              </option>
+              <option value="PG" data-currency="PGK" data-language="en">
+                Papua New Guinea
+              </option>
+              <option value="PY" data-currency="PYG" data-language="es">
+                Paraguay
+              </option>
+              <option value="PE" data-currency="PEN" data-language="es">
+                Peru
+              </option>
+              <option value="PH" data-currency="PHP" data-language="en">
+                Philippines
+              </option>
+              <option value="PN" data-currency="NZD" data-language="en">
+                Pitcairn
+              </option>
+              <option value="PL" data-currency="PLN" data-language="en">
+                Poland
+              </option>
+              <option value="PT" data-currency="EUR" data-language="pt">
+                Portugal
+              </option>
+              <option value="QA" data-currency="QAR" data-language="ar">
+                Qatar
+              </option>
+              <option value="RE" data-currency="EUR" data-language="en">
+                Reunion
+              </option>
+              <option value="RO" data-currency="RON" data-language="en">
+                Romania
+              </option>
+              <option value="RU" data-currency="RUB" data-language="ru">
+                Russia
+              </option>
+              <option value="RW" data-currency="RWF" data-language="en">
+                Rwanda
+              </option>
+              <option value="KN" data-currency="XCD" data-language="en">
+                Saint Kitts and Nevis
+              </option>
+              <option value="LC" data-currency="XCD" data-language="en">
+                Saint Lucia
+              </option>
+              <option value="VC" data-currency="XCD" data-language="en">
+                St. Vincent and Grenadines
+              </option>
+              <option value="WS" data-currency="WST" data-language="en">
+                Samoa
+              </option>
+              <option value="SM" data-currency="EUR" data-language="en">
+                San Marino
+              </option>
+              <option value="ST" data-currency="STD" data-language="en">
+                Sao Tome and Principe
+              </option>
+              <option value="SA" data-currency="SAR" data-language="ar">
+                Saudi Arabia
+              </option>
+              <option value="SN" data-currency="XOF" data-language="en">
+                Senegal
+              </option>
+              <option value="RS" data-currency="RSD" data-language="en">
+                Serbia
+              </option>
+              <option value="SC" data-currency="SCR" data-language="en">
+                Republic of Seychelles
+              </option>
+              <option value="SL" data-currency="SLL" data-language="en">
+                Sierra Leone
+              </option>
+              <option value="SG" data-currency="SGD" data-language="en">
+                Singapore
+              </option>
+              <option value="SK" data-currency="EUR" data-language="en">
+                Slovak Republic
+              </option>
+              <option value="SI" data-currency="EUR" data-language="en">
+                Slovenia
+              </option>
+              <option value="SB" data-currency="SBD" data-language="en">
+                Solomon Islands
+              </option>
+              <option value="ZA" data-currency="ZAR" data-language="en">
+                South Africa
+              </option>
+              <option value="GS" data-currency="GBP" data-language="en">
+                S.Georgia and S.Sandwich Is.
+              </option>
+              <option value="KR" data-currency="USD" data-language="ko">
+                South Korea
+              </option>
+              <option value="ES" data-currency="EUR" data-language="es">
+                Spain
+              </option>
+              <option value="LK" data-currency="LKR" data-language="en">
+                Sri Lanka
+              </option>
+              <option value="SH" data-currency="SHP" data-language="en">
+                St. Helena
+              </option>
+              <option value="PM" data-currency="EUR" data-language="en">
+                St. Pierre and Miquelon
+              </option>
+              <option value="SR" data-currency="SRD" data-language="en">
+                Suriname
+              </option>
+              <option value="SJ" data-currency="NOK" data-language="en">
+                Svalbard and Jan Mayen Is.
+              </option>
+              <option value="SZ" data-currency="SZL" data-language="en">
+                Swaziland
+              </option>
+              <option value="SE" data-currency="SEK" data-language="en">
+                Sweden
+              </option>
+              <option value="CH" data-currency="CHF" data-language="de">
+                Switzerland
+              </option>
+              <option value="TW" data-currency="TWD" data-language="ch">
+                Taiwan Region
+              </option>
+              <option value="TJ" data-currency="TJS" data-language="en">
+                Tajikistan
+              </option>
+              <option value="TZ" data-currency="TZS" data-language="en">
+                Tanzania
+              </option>
+              <option value="TH" data-currency="THB" data-language="en">
+                Thailand
+              </option>
+              <option value="TG" data-currency="XOF" data-language="en">
+                Togo
+              </option>
+              <option value="TK" data-currency="NZD" data-language="en">
+                Tokelau
+              </option>
+              <option value="TO" data-currency="TOP" data-language="en">
+                Tonga
+              </option>
+              <option value="TT" data-currency="TTD" data-language="en">
+                Trinidad and Tobago
+              </option>
+              <option value="TN" data-currency="TND" data-language="ar">
+                Tunisia
+              </option>
+              <option value="TR" data-currency="TRY" data-language="en">
+                Turkey
+              </option>
+              <option value="TM" data-currency="TMT" data-language="en">
+                Turkmenistan
+              </option>
+              <option value="TC" data-currency="USD" data-language="en">
+                Turks and Caicos Islands
+              </option>
+              <option value="TV" data-currency="AUD" data-language="en">
+                Tuvalu
+              </option>
+              <option value="UG" data-currency="UGX" data-language="en">
+                Uganda
+              </option>
+              <option value="UA" data-currency="UAH" data-language="ru">
+                Ukraine
+              </option>
+              <option value="AE" data-currency="AED" data-language="en">
+                United Arab Emirates
+              </option>
+              <option value="GB" data-currency="GBP" data-language="en">
+                United Kingdom
+              </option>
+              <option value="UY" data-currency="UYU" data-language="es">
+                Uruguay
+              </option>
+              <option value="US" data-currency="USD" data-language="en">
+                US
+              </option>
+              <option value="UZ" data-currency="UZS" data-language="en">
+                Uzbekistan
+              </option>
+              <option value="VU" data-currency="VUV" data-language="en">
+                Vanuatu
+              </option>
+              <option value="VA" data-currency="EUR" data-language="en">
+                Vatican (Holy See)
+              </option>
+              <option value="VE" data-currency="VEF" data-language="en">
+                Venezuela
+              </option>
+              <option value="VN" data-currency="VND" data-language="en">
+                Vietnam
+              </option>
+              <option value="WF" data-currency="XPF" data-language="en">
+                Wallis and Futuna Is.
+              </option>
+              <option value="EH" data-currency="MAD" data-language="en">
+                Western Sahara
+              </option>
+              <option value="CD" data-currency="CDF" data-language="en">
+                Zaire
+              </option>
+              <option value="ZM" data-currency="ZMW" data-language="en">
+                Zambia
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="dialog-item">
+          <div class="toggle-outer">
+            <div class="toggle-description">Reduced Motion</div>
+            <div class="toggle-container" role="checkbox" tabindex="0">
+              <label class="label" for="toggle"
+                ><input type="checkbox" tabindex="-1" id="toggle" /><span
+                  class="switch"
+                ></span>
+                <div class="visually-hidden">selected: false</div></label
+              >
+            </div>
+          </div>
         </div>
       </section>
     </div>
