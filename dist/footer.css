@@ -20,7 +20,7 @@ footer {
   min-width: 300px;
   max-width: 1440px;
   width: 100%;
-  min-height: 32px;
+  min-height: var(--content-spacing-xxlarge);
   padding-left: var(--content-spacing-xlarge);
   padding-right: var(--content-spacing-xlarge);
   position: relative;
