@@ -1,7 +1,7 @@
 .input-container {
   display: flex;
   flex-direction: column;
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-default);
   position: relative;
 }
 

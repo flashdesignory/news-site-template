@@ -51,7 +51,7 @@
   --font-weight-less-bold: 400;
   --font-weight-bold: 500;
   --font-weight-more-bold: 600;
-  --default-font-family: sans-serif;
+  --font-family-default: sans-serif;
 
   /* transitions */
   --transition-default: all 0.3s ease;

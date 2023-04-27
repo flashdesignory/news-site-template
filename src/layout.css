@@ -40,7 +40,7 @@ but useful for people who use screen readers */
 
 .page {
   font-size: var(--font-size-medium);
-  font-family: var(--default-font-family);
+  font-family: var(--font-family-default);
   background-color: var(--color-utils-white);
   position: relative;
   display: flex;
