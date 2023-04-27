@@ -49,6 +49,10 @@
   color: var(--color-utils-gray);
 }
 
+.input-container input[type="submit"]:hover {
+  background-color: var(--color-utils-offwhite);
+}
+
 .input-container .input:focus {
   border-color: var(--color-utils-gray-dark);
   color: var(--color-utils-gray-dark);
