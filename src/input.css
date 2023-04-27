@@ -16,6 +16,7 @@
   border-radius: var(--border-radius-small);
   border: var(--border-width-medium) solid var(--color-utils-black);
   color: var(--color-utils-black);
+  background-color: var(--color-utils-white);
   transition: var(--transition-default);
   width: 100%;
   height: 40px;
