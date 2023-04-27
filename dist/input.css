@@ -11,7 +11,6 @@
 }
 
 .input-container .input {
-  outline: 0;
   padding: 0 var(--content-spacing-medium);
   border-radius: var(--border-radius-small);
   border: var(--border-width-medium) solid var(--color-utils-black);
