@@ -122,6 +122,10 @@ footer {
   text-align: center;
 }
 
+#footer-row-search {
+  font-size: var(--font-size-medium);
+}
+
 @media (max-width: 767px) {
   footer {
     padding: var(--content-spacing-large) 0 0 0;

@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="src/select.css" />
     <link rel="stylesheet" href="src/toggle.css" />
     <link rel="stylesheet" href="src/button.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/form.css" />
     <link rel="stylesheet" href="src/advertisement.css" />
     <link rel="stylesheet" href="src/header.css" />
     <link rel="stylesheet" href="src/nav.css" />
@@ -737,10 +739,40 @@
         </section>
       </main>
       <footer>
-        <div class="footer-row" id="footer-row-top">
-          <div class="footer-column-center">© 1997 No Rights Reserved</div>
+        <div class="footer-row" id="footer-row-search">
+          <div class="footer-column-center">
+            <div class="input-form-container">
+              <div class="input-form-content">
+                <form id="form">
+                  <div class="input-container">
+                    <label class="visually-hidden" for="input"
+                      >Search this site..</label
+                    ><input
+                      class="input input-type-text"
+                      type="text"
+                      autocomplete="off"
+                      id="input"
+                      placeholder="Search this site..."
+                    />
+                  </div>
+                  <div class="input-container">
+                    <label class="visually-hidden" for="submit"
+                      >submit form</label
+                    ><input
+                      class="input input-type-submit"
+                      type="submit"
+                      autocomplete="off"
+                      id="submit"
+                      value="Search"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer-row" id="footer-row-middle">
+
+        <div class="footer-row">
           <div class="footer-column-center">
             <div class="footer-links">
               <ul class="footer-links-list">
@@ -762,7 +794,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-row" id="footer-row-bottom">
+        <div class="footer-row">
           <div class="footer-column-left">
             <div class="footer-icons">
               <ul class="footer-icons-list">
@@ -805,13 +837,7 @@
               </ul>
             </div>
           </div>
-          <div class="footer-column-center">
-            <details class="footer-details">
-              <summary>Cookies Preferences</summary>
-              This website uses cookies to ensure you get the best experience on
-              our website.
-            </details>
-          </div>
+          <div class="footer-column-center">© 1997 No Rights Reserved</div>
           <div class="footer-column-right">
             <div class="footer-icons">
               <ul class="footer-icons-list">
