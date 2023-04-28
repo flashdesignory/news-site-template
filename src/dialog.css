@@ -33,23 +33,11 @@
   display: flex;
 }
 
-.close-icon {
-  display: flex;
-  position: relative;
-}
-
-.close-icon svg {
-  width: inherit;
-  height: inherit;
-}
-
-.close-icon svg path {
-  fill: var(--color-utils-black);
-  transition: fill 0.3s ease;
-}
-
-.close-button:hover svg path {
-  fill: var(--color-utils-gray-light);
+.dialog .animated-icon {
+  --animated-icon-width: 24px;
+  --animated-icon-background: transparent;
+  --animated-icon-color: var(--color-utils-black);
+  --animated-icon-hover: var(--color-utils-gray-light);
 }
 
 .dialog-header {
