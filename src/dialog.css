@@ -33,17 +33,17 @@
   display: flex;
 }
 
-.dialog-icon {
+.close-icon {
   display: flex;
   position: relative;
 }
 
-.dialog-icon svg {
+.close-icon svg {
   width: inherit;
   height: inherit;
 }
 
-.dialog-icon svg path {
+.close-icon svg path {
   fill: var(--color-utils-black);
   transition: fill 0.3s ease;
 }
