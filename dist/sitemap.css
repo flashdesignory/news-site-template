@@ -87,3 +87,10 @@
 .sitemap-list-item {
   padding: var(--content-spacing-xsmall) var(--content-spacing-medium);
 }
+
+@media (max-width: 419px) {
+  .sitemap {
+    max-width: unset;
+    border-radius: 0;
+  }
+}
