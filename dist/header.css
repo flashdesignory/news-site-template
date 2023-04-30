@@ -39,6 +39,7 @@
   width: var(--icon-size);
   height: var(--icon-size);
   padding: 2px;
+  z-index: 92;
 }
 
 .page-navigation-logo svg path {
@@ -57,6 +58,10 @@
 
 .page-navigation-button:hover {
   color: var(--color-utils-white);
+}
+
+#header-nav-login {
+  z-index: 92;
 }
 
 @media (max-width: 767px) {

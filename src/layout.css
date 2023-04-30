@@ -10,10 +10,9 @@ svg {
 }
 
 html,
-body,
-.page {
+body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -39,6 +38,9 @@ but useful for people who use screen readers */
 }
 
 .page {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
   font-size: var(--font-size-medium);
   font-family: var(--font-family-default);
   background-color: var(--color-utils-white);
