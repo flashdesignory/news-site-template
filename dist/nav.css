@@ -159,7 +159,7 @@
     inset: 0;
     background-color: var(--color-utils-black);
     width: 100%;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 54px);
     height: auto;
     margin-left: 0;
     padding: var(--nav-height) var(--content-spacing-xlarge) 0
