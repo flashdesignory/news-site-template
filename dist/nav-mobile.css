@@ -5,7 +5,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 200;
+  z-index: var(--index-nav-mobile);
   display: none;
   font-family: var(--font-family-default);
   background-color: var(--color-utils-black);

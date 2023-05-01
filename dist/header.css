@@ -8,7 +8,7 @@
   position: sticky;
   top: 0;
   background-color: var(--color-utils-black);
-  z-index: 90;
+  z-index: var(--index-header);
 }
 
 .page-navigation-row {
@@ -39,7 +39,7 @@
   width: var(--icon-size);
   height: var(--icon-size);
   padding: 2px;
-  z-index: 92;
+  z-index: var(--index-header-button);
 }
 
 .page-navigation-logo svg path {
@@ -61,7 +61,7 @@
 }
 
 #header-nav-login {
-  z-index: 92;
+  z-index: var(--index-header-button);
 }
 
 @media (max-width: 767px) {

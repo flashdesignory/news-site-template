@@ -68,7 +68,7 @@ but useful for people who use screen readers */
   display: flex;
   flex-direction: column;
   width: 100%;
-  z-index: 80;
+  z-index: var(--index-content);
 
   /* expand height if content is empty */
   flex: 1;
@@ -133,7 +133,7 @@ but useful for people who use screen readers */
   align-items: center;
   color: var(--color-utils-offwhite);
   background-color: var(--color-utils-black);
-  z-index: 90;
+  z-index: var(--indxe-content-title);
   padding: var(--content-spacing-xlarge) var(--content-spacing-xlarge) 0
     var(--content-spacing-xlarge);
 }

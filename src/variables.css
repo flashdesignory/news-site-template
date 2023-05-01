@@ -55,4 +55,18 @@
 
   /* transitions */
   --transition-default: all 0.3s ease;
+
+  /* z-index */
+  --index-important: 2147483647;
+  --index-advertisement: 2147483646;
+  --index-somewhatimportant: 2147483645;
+  --index-content: 80;
+  --indxe-content-title: 90;
+  --index-nav: 100;
+  --index-nav-input: 101;
+  --index-nav-label: 102;
+  --index-nav-mobile: 300;
+  --index-header: 100;
+  --index-header-button: 101;
+  --index-dropdown: 200;
 }

@@ -52,7 +52,7 @@ to manually force reduced-motion on child elements */
   border-radius: var(--border-radius-small);
   position: absolute;
   transform: translateY(-100%);
-  z-index: 200;
+  z-index: var(--index-somewhatimportant);
   text-decoration: none;
 }
 

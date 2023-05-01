@@ -8,7 +8,7 @@
   left: 40px;
   right: unset;
   background-color: var(--color-utils-white);
-  z-index: 200;
+  z-index: var(--index-important);
   border-radius: var(--border-radius-medium);
   box-shadow: 0 10px 18px var(--color-utils-gray);
   display: none;
@@ -24,12 +24,12 @@
   padding: var(--content-spacing-xlarge);
 }
 
-.close-button {
+.dialog .close-button {
   position: absolute;
   top: var(--content-spacing-medium);
   right: var(--content-spacing-medium);
-  width: var(--icon-size-tiny);
-  height: var(--icon-size-tiny);
+  width: var(--icon-size-small);
+  height: var(--icon-size-small);
   display: flex;
 }
 
