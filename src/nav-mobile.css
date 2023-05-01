@@ -1,6 +1,7 @@
 .mobile-menu {
   position: fixed;
   width: 100%;
+  min-width: 300px;
   height: 100%;
   top: 0;
   left: 0;
@@ -43,7 +44,6 @@
   font-size: var(--font-size-medium);
   text-transform: uppercase;
   width: 100%;
-  margin-top: var(--content-spacing-xlarge);
 }
 
 .mobile-menu-title {
@@ -57,7 +57,7 @@
 }
 
 .mobile-menu-title svg {
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .mobile-menu-title svg path {
