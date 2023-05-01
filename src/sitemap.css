@@ -73,7 +73,22 @@
 }
 
 .sitemap-list-item {
+  width: 100%;
+  margin-top: var(--content-spacing-small);
+}
+
+.sitemap-list-item a {
+  width: 100%;
+  display: flex;
   padding: var(--content-spacing-xsmall) var(--content-spacing-medium);
+  text-decoration: none;
+  color: var(--color-utils-black);
+  transition: var(--transition-default);
+}
+
+.sitemap-list-item a:hover,
+.sitemap-list-item a:focus {
+  background-color: var(--color-utils-offwhite);
 }
 
 @media (max-width: 419px) {
