@@ -44,6 +44,7 @@ but useful for people who use screen readers */
 
 .page {
   width: 100%;
+  min-width: 300px;
   height: 100%;
   overflow-x: hidden;
   font-size: var(--font-size-medium);
