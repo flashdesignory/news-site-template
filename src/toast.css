@@ -69,3 +69,16 @@
 .toast-description a:hover {
   color: var(--color-utils-white);
 }
+
+.toast-actions {
+  display: flex;
+  margin: var(--content-spacing-large) 0;
+}
+
+.toast-actions .button {
+  padding: 0 var(--content-spacing-large);
+}
+
+.toast-actions .button:not(:last-child) {
+  margin-right: var(--content-spacing-large);
+}
