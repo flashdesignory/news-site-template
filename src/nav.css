@@ -159,8 +159,7 @@
     inset: 0;
     background-color: var(--color-utils-black);
     width: 100%;
-    min-height: calc(100vmin);
-    height: auto;
+    height: calc(100vh - 54px);
     margin-left: 0;
     padding: var(--nav-height) var(--content-spacing-xlarge) 0
       var(--content-spacing-xlarge);
@@ -181,7 +180,6 @@
   #header-nav-toggle:checked ~ .header-nav-content {
     display: flex;
     flex-direction: column;
-    flex: 1;
   }
 
   #header-nav-toggle:checked ~ .header-nav-content .header-icons-list {

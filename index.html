@@ -31,6 +31,12 @@
     <link rel="stylesheet" href="src/dropdown.css" />
     <link rel="stylesheet" href="src/sitemap.css" />
     <link rel="stylesheet" href="src/layout.css" />
+    <script>
+      function toggleMenu(element) {
+        document.body.classList.toggle("no-scroll");
+        document.getElementById("content").classList.toggle("no-scroll");
+      }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
@@ -106,10 +112,7 @@
               <input
                 type="checkbox"
                 id="header-nav-toggle"
-                onchange="(function toggleMenu(){
-                document.body.classList.toggle('no-scroll');
-                document.getElementById('content').classList.toggle('no-scroll');
-              })()"
+                onchange="toggleMenu(this)"
               />
               <label for="header-nav-toggle" class="header-nav-label">
                 <div
