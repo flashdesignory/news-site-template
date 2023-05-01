@@ -20,3 +20,4 @@ https://flashdesignory.github.io/news-site-template/
 | Sitemap | ![screenshot](./preview-logo.png) | Sitemap can be viewed by clicking on the satellite icon, or by navigating to `/#sitemap`. |
 | Settings | ![screenshot](./preview-settings.png) | Settings can be viewed by clickin on any of the settings icons in the footer, or by navigating to `/#settings.` |
 | DropDown | ![screenshot](./preview-dropdown.png) | Dropdown toggles in the main navigation or in the mobile menu will toggle the content. |
+| Toast | | Navigating to `/#notification` will display a generic notification. |
