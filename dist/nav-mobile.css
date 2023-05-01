@@ -17,13 +17,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: var(--content-spacing-xlarge);
+  padding: 0 var(--content-spacing-xlarge) var(--content-spacing-xlarge)
+    var(--content-spacing-xlarge);
 }
 
-.close-button {
+.mobile-menu .close-button {
   position: absolute;
-  top: var(--content-spacing-medium);
-  right: var(--content-spacing-medium);
+  top: var(--content-spacing-small);
+  right: var(--content-spacing-small);
   width: var(--icon-size-small);
   height: var(--icon-size-small);
   display: flex;
@@ -39,11 +40,15 @@
 .mobile-menu-header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: var(--font-size-medium);
   text-transform: uppercase;
   width: 100%;
+  height: var(--nav-height);
+  border-bottom: 1px solid var(--color-utils-gray);
+  flex-shrink: 0;
 }
 
 .mobile-menu-title {
@@ -51,9 +56,6 @@
   flex-shrink: 1;
   justify-content: center;
   width: 100%;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
-  border-bottom: 1px solid var(--color-utils-gray);
 }
 
 .mobile-menu-title svg {
