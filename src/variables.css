@@ -57,15 +57,15 @@
   --transition-default: all 0.3s ease;
 
   /* z-index */
-  --index-important: 2147483647;
-  --index-advertisement: 2147483646;
-  --index-somewhatimportant: 2147483645;
+  --index-important: 1000;
+  --index-advertisement: 400;
+  --index-somewhatimportant: 600;
   --index-content: 80;
   --indxe-content-title: 90;
   --index-nav: 100;
   --index-nav-input: 101;
   --index-nav-label: 102;
-  --index-nav-mobile: 300;
+  --index-nav-mobile: 500;
   --index-header: 100;
   --index-header-button: 101;
   --index-dropdown: 200;
