@@ -37,6 +37,11 @@ but useful for people who use screen readers */
   background: orange;
 }
 
+/* menu */
+.no-scroll {
+  position: fixed;
+}
+
 .page {
   width: 100%;
   height: 100%;
