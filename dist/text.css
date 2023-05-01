@@ -3,11 +3,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
+  display: block !important;
 }
 
 .truncate-multiline {
-  display: -webkit-box;
+  display: -webkit-box !important;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   width: 100%;
