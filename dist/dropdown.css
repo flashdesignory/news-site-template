@@ -43,7 +43,7 @@
 
 .dropdown-toggle:checked
   ~ .dropdown-label
-  #arrow-icon
+  .arrow-icon
   .animated-icon-inner
   span:nth-child(1) {
   transform: translate(var(--animated-icon-height-half), 0) rotate(-35deg);
@@ -51,7 +51,7 @@
 
 .dropdown-toggle:checked
   ~ .dropdown-label
-  #arrow-icon
+  .arrow-icon
   .animated-icon-inner
   span:nth-child(2) {
   transform: translate(var(--animated-icon-center), 0) rotate(215deg);

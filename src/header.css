@@ -60,7 +60,7 @@
   color: var(--color-utils-white);
 }
 
-#header-nav-login {
+.nav-button {
   z-index: var(--index-header-button);
 }
 

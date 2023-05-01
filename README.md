@@ -14,10 +14,10 @@ https://flashdesignory.github.io/news-site-template/
 
 ## Interactive Elements
 
-| Type   |      Icon      |  Route |
-|:---------|:-------------|:------|
-| Menu | ![screenshot](./preview-menu.png) | On smaller breakpoints, clicking on the menu icon will show the menu.<br/>On larger breakpoints, navigating to `/#menu` will trigger the menu as well. |
-| Sitemap | ![screenshot](./preview-logo.png) | Sitemap can be viewed by clicking on the satellite icon, or by navigating to `/#sitemap`. |
-| Settings | ![screenshot](./preview-settings.png) | Settings can be viewed by clickin on any of the settings icons in the footer, or by navigating to `/#settings.` |
-| DropDown | ![screenshot](./preview-dropdown.png) | Dropdown toggles in the main navigation or in the mobile menu will toggle the content. |
-| Toast | | Navigating to `/#notification` will display a generic notification. |
+| Type     | Icon                                  | Route                                                                                                                                                  |
+| :------- | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Menu     | ![screenshot](./preview-menu.png)     | On smaller breakpoints, clicking on the menu icon will show the menu.<br/>On larger breakpoints, navigating to `/#menu` will trigger the menu as well. |
+| Sitemap  | ![screenshot](./preview-logo.png)     | Sitemap can be viewed by clicking on the satellite icon, or by navigating to `/#sitemap`.                                                              |
+| Settings | ![screenshot](./preview-settings.png) | Settings can be viewed by clickin on any of the settings icons in the footer, or by navigating to `/#settings.`                                        |
+| DropDown | ![screenshot](./preview-dropdown.png) | Dropdown toggles in the main navigation or in the mobile menu will toggle the content.                                                                 |
+| Toast    |                                       | Navigating to `/#notification` will display a generic notification.                                                                                    |

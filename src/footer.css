@@ -122,7 +122,7 @@ footer {
   text-align: center;
 }
 
-#footer-row-search {
+.footer-row-search {
   font-size: var(--font-size-medium);
 }
 
