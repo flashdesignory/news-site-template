@@ -167,6 +167,14 @@ but useful for people who use screen readers */
     width: 100%;
   }
 
+  .columns-3-wide {
+    order: 1;
+  }
+
+  .columns-3-narrow {
+    order: 2;
+  }
+
   .columns-4-balanced {
     width: calc(50% - (var(--content-spacing-xlarge) / 2));
   }
