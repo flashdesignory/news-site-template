@@ -6,7 +6,7 @@ const targetDirectory = "./dist";
 
 const htmlFile = "index.html";
 
-const filesToMove = [];
+const filesToMove = ["page.html"];
 const foldersToMove = ["./assets"];
 
 const copy = async (src, dest) => {

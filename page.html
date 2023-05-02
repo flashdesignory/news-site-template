@@ -12,27 +12,27 @@
       href="assets/favicon.svg"
       id="favicon-svg"
     />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="a11y.css" />
-    <link rel="stylesheet" href="variables.css" />
-    <link rel="stylesheet" href="icons.css" />
-    <link rel="stylesheet" href="text.css" />
-    <link rel="stylesheet" href="dialog.css" />
-    <link rel="stylesheet" href="select.css" />
-    <link rel="stylesheet" href="toggle.css" />
-    <link rel="stylesheet" href="button.css" />
-    <link rel="stylesheet" href="input.css" />
-    <link rel="stylesheet" href="form.css" />
-    <link rel="stylesheet" href="advertisement.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="nav.css" />
-    <link rel="stylesheet" href="nav-mobile.css" />
-    <link rel="stylesheet" href="article.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="dropdown.css" />
-    <link rel="stylesheet" href="sitemap.css" />
-    <link rel="stylesheet" href="toast.css" />
-    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="src/reset.css" />
+    <link rel="stylesheet" href="src/a11y.css" />
+    <link rel="stylesheet" href="src/variables.css" />
+    <link rel="stylesheet" href="src/icons.css" />
+    <link rel="stylesheet" href="src/text.css" />
+    <link rel="stylesheet" href="src/dialog.css" />
+    <link rel="stylesheet" href="src/select.css" />
+    <link rel="stylesheet" href="src/toggle.css" />
+    <link rel="stylesheet" href="src/button.css" />
+    <link rel="stylesheet" href="src/input.css" />
+    <link rel="stylesheet" href="src/form.css" />
+    <link rel="stylesheet" href="src/advertisement.css" />
+    <link rel="stylesheet" href="src/header.css" />
+    <link rel="stylesheet" href="src/nav.css" />
+    <link rel="stylesheet" href="src/nav-mobile.css" />
+    <link rel="stylesheet" href="src/article.css" />
+    <link rel="stylesheet" href="src/footer.css" />
+    <link rel="stylesheet" href="src/dropdown.css" />
+    <link rel="stylesheet" href="src/sitemap.css" />
+    <link rel="stylesheet" href="src/toast.css" />
+    <link rel="stylesheet" href="src/layout.css" />
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
@@ -134,7 +134,7 @@
               </div>
               <div class="header-nav-content">
                 <ul class="nav-list">
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a href="./page.html" id="nav-page-us-link">US</a>
                   </li>
                   <li class="nav-item">
@@ -207,96 +207,9 @@
         </div>
       </nav>
       <main class="content" id="content">
-        <h1 class="visually-hidden">FrontPage Content</h1>
-        <div id="content-frontpage-breaking" class="row-heading">
-          <h2>Breaking News</h2>
-        </div>
-        <section class="row">
-          <article class="column columns-3-narrow article">
-            <header class="article-header"><h2>Mauris</h2></header>
-            <section class="article-body">
-              <picture class="article-image">
-                <img
-                  src="assets/placeholder_light.jpg"
-                  alt="Placeholder"
-                  width="1280"
-                  height="720"
-                />
-              </picture>
-              <h3 class="article-title truncate-singleline">
-                Mauris in aliquam sem fringilla ut morbi tincidunt augue.
-              </h3>
-              <div class="article-content">
-                Nec ullamcorper sit amet risus nullam eget felis eget. Amet
-                nulla facilisi morbi tempus iaculis urna id volutpat lacus. At
-                lectus urna duis convallis convallis tellus. Pulvinar neque
-                laoreet suspendisse interdum consectetur libero id. Mattis
-                pellentesque id nibh tortor id aliquet lectus proin. Euismod
-                quis viverra nibh cras pulvinar mattis nunc sed. Elementum
-                sagittis vitae et leo duis ut diam quam. Tincidunt ornare massa
-                eget egestas purus.
-              </div>
-            </section>
-          </article>
-          <article class="column columns-3-wide article">
-            <header class="article-header"><h2>Nisi</h2></header>
-            <section class="article-body">
-              <picture class="article-image">
-                <img
-                  src="assets/placeholder_light.jpg"
-                  alt="Placeholder"
-                  width="1280"
-                  height="720"
-                />
-              </picture>
-              <h3 class="article-title truncate-singleline">
-                Nisi porta lorem mollis aliquam ut porttitor leo a.
-              </h3>
-              <div class="article-content">
-                Facilisis volutpat est velit egestas dui id ornare arcu odio.
-                Arcu dictum varius duis at consectetur. Consectetur adipiscing
-                elit pellentesque habitant morbi tristique senectus et netus.
-                Rutrum tellus pellentesque eu tincidunt tortor aliquam. Sit amet
-                dictum sit amet justo donec enim diam. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis. Sed augue lacus viverra
-                vitae congue eu consequat ac. Ullamcorper dignissim cras
-                tincidunt lobortis. In tellus integer feugiat scelerisque varius
-                morbi enim. Maecenas sed enim ut sem viverra aliquet eget sit.
-                Felis donec et odio pellentesque diam volutpat commodo.
-              </div>
-            </section>
-          </article>
-          <article class="column columns-3-narrow article">
-            <header class="article-header">
-              <h2>Hendrerit</h2>
-            </header>
-            <section class="article-body">
-              <picture class="article-image">
-                <img
-                  src="assets/placeholder_light.jpg"
-                  alt="Placeholder"
-                  width="1280"
-                  height="720"
-                />
-              </picture>
-              <h3 class="article-title truncate-singleline">
-                Hendrerit gravida rutrum quisque non tellus orci ac.
-              </h3>
-              <div class="article-content">
-                Placerat vestibulum lectus mauris ultrices eros. Amet cursus sit
-                amet dictum. Ultricies lacus sed turpis tincidunt id aliquet
-                risus feugiat. Vulputate ut pharetra sit amet aliquam. Sit amet
-                dictum sit amet justo donec enim. Ipsum dolor sit amet
-                consectetur adipiscing elit. Sit amet consectetur adipiscing
-                elit duis tristique sollicitudin. Lorem dolor sed viverra ipsum.
-                Proin nibh nisl condimentum id venenatis a condimentum vitae
-                sapien. Rutrum quisque non tellus orci ac auctor augue mauris.
-              </div>
-            </section>
-          </article>
-        </section>
-        <div id="content-frontpage-latest" class="row-heading">
-          <h2>Latest News</h2>
+        <h1 class="visually-hidden">US Page Content</h1>
+        <div id="content-uspage-crime+justice" class="row-heading">
+          <h2>Crime + Justice</h2>
         </div>
         <section class="row">
           <article class="column columns-3-balanced article">
@@ -411,8 +324,95 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-local" class="row-heading">
-          <h2>Local News</h2>
+        <div id="content-uspage-energy+environment" class="row-heading">
+          <h2>Energy + Environment</h2>
+        </div>
+        <section class="row">
+          <article class="column columns-3-wide article">
+            <header class="article-header"><h2>Nisi</h2></header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title truncate-singleline">
+                Nisi porta lorem mollis aliquam ut porttitor leo a.
+              </h3>
+              <div class="article-content">
+                Facilisis volutpat est velit egestas dui id ornare arcu odio.
+                Arcu dictum varius duis at consectetur. Consectetur adipiscing
+                elit pellentesque habitant morbi tristique senectus et netus.
+                Rutrum tellus pellentesque eu tincidunt tortor aliquam. Sit amet
+                dictum sit amet justo donec enim diam. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis. Sed augue lacus viverra
+                vitae congue eu consequat ac. Ullamcorper dignissim cras
+                tincidunt lobortis. In tellus integer feugiat scelerisque varius
+                morbi enim. Maecenas sed enim ut sem viverra aliquet eget sit.
+                Felis donec et odio pellentesque diam volutpat commodo.
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-narrow article">
+            <header class="article-header"><h2>Mauris</h2></header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title truncate-singleline">
+                Mauris in aliquam sem fringilla ut morbi tincidunt augue.
+              </h3>
+              <div class="article-content">
+                Nec ullamcorper sit amet risus nullam eget felis eget. Amet
+                nulla facilisi morbi tempus iaculis urna id volutpat lacus. At
+                lectus urna duis convallis convallis tellus. Pulvinar neque
+                laoreet suspendisse interdum consectetur libero id. Mattis
+                pellentesque id nibh tortor id aliquet lectus proin. Euismod
+                quis viverra nibh cras pulvinar mattis nunc sed. Elementum
+                sagittis vitae et leo duis ut diam quam. Tincidunt ornare massa
+                eget egestas purus.
+              </div>
+            </section>
+          </article>
+          <article class="column columns-3-narrow article">
+            <header class="article-header">
+              <h2>Hendrerit</h2>
+            </header>
+            <section class="article-body">
+              <picture class="article-image">
+                <img
+                  src="assets/placeholder_light.jpg"
+                  alt="Placeholder"
+                  width="1280"
+                  height="720"
+                />
+              </picture>
+              <h3 class="article-title truncate-singleline">
+                Hendrerit gravida rutrum quisque non tellus orci ac.
+              </h3>
+              <div class="article-content">
+                Placerat vestibulum lectus mauris ultrices eros. Amet cursus sit
+                amet dictum. Ultricies lacus sed turpis tincidunt id aliquet
+                risus feugiat. Vulputate ut pharetra sit amet aliquam. Sit amet
+                dictum sit amet justo donec enim. Ipsum dolor sit amet
+                consectetur adipiscing elit. Sit amet consectetur adipiscing
+                elit duis tristique sollicitudin. Lorem dolor sed viverra ipsum.
+                Proin nibh nisl condimentum id venenatis a condimentum vitae
+                sapien. Rutrum quisque non tellus orci ac auctor augue mauris.
+              </div>
+            </section>
+          </article>
+        </section>
+        <div id="content-uspage-extreme_weather" class="row-heading">
+          <h2>Extreme Weather</h2>
         </div>
         <section class="row">
           <article class="column article">
@@ -463,8 +463,8 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-world" class="row-heading">
-          <h2>World News</h2>
+        <div id="content-uspage-space+science" class="row-heading">
+          <h2>Space + Science</h2>
         </div>
         <section class="row">
           <article class="column columns-wrap article">
@@ -672,7 +672,7 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-paid" class="row-heading">
+        <div id="content-uspage-paid" class="row-heading">
           <h2>Paid Content</h2>
         </div>
         <section class="row">
@@ -2072,7 +2072,7 @@
       <section class="mobile-menu-body">
         <nav class="mobile-menu-nav">
           <ul class="nav-list">
-            <li class="nav-item">
+            <li class="nav-item active">
               <a href="./page.html" id="mobile-nav-page-us-link">US</a>
             </li>
             <li class="nav-item">
