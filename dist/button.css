@@ -3,9 +3,11 @@
   font-family: inherit;
   font-size: inherit;
   border-radius: var(--border-radius-small);
-  transition: var(--transition-default);
   height: var(--nav-button-height);
   padding: 0 var(--content-spacing-small);
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
 .primary-button {

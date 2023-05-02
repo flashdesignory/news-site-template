@@ -16,7 +16,11 @@
   border: var(--border-width-medium) solid var(--color-utils-black);
   color: var(--color-utils-black);
   background-color: var(--color-utils-white);
-  transition: var(--transition-default);
+
+  /* transition: var(--transition-default); */
+  transition-property: color, background-color, border-color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
   width: 100%;
   height: 40px;
   font-size: inherit;

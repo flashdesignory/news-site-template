@@ -13,6 +13,8 @@
   height: calc(var(--nav-button-height) - 2px);
   left: 0;
   top: 1px;
+  z-index: var(--index-dropdown-input);
+  transition: none;
 }
 
 .dropdown-label {
@@ -30,6 +32,7 @@
   transition-property: color, background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  z-index: var(--index-dropdown-label);
 }
 
 .dropdown-label:hover {
