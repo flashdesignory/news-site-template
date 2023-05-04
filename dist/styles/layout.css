@@ -58,7 +58,7 @@ but useful for people who use screen readers */
   overflow: auto;
 }
 
-.content {
+.page-main {
   min-width: 300px;
   max-width: 1440px;
   margin: 0 auto;
