@@ -110,7 +110,7 @@
   background-color: var(--color-utils-gray);
 }
 
-.navbar-item.active a {
+.navbar-item a.active {
   color: var(--color-utils-white);
   background-color: var(--color-utils-gray-light);
 }
