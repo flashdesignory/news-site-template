@@ -26,7 +26,8 @@
     <link rel="stylesheet" href="src/styles/advertisement.css" />
     <link rel="stylesheet" href="src/styles/header.css" />
     <link rel="stylesheet" href="src/styles/nav.css" />
-    <link rel="stylesheet" href="src/styles/nav-mobile.css" />
+    <link rel="stylesheet" href="src/styles/navbar.css" />
+    <link rel="stylesheet" href="src/styles/menu.css" />
     <link rel="stylesheet" href="src/styles/article.css" />
     <link rel="stylesheet" href="src/styles/footer.css" />
     <link rel="stylesheet" href="src/styles/dropdown.css" />
@@ -92,8 +93,8 @@
         </div>
         <div class="advertisement-notice">Advertisement</div>
       </aside>
-      <header class="page-heading">
-        <a href="./" class="page-heading-title">
+      <header class="page-header">
+        <a href="./" class="page-header-title">
           <svg viewBox="0 0 469 64" width="469" height="64">
             <title>The Daily Broadcast</title>
             <path
@@ -105,11 +106,11 @@
       <nav class="page-navigation" aria-label="main menu">
         <div class="page-navigation-row">
           <div class="page-navigation-column-left">
-            <div class="header-nav">
+            <div class="navbar">
               <a
                 href="#menu"
                 id="menu-link"
-                class="header-nav-label"
+                class="navbar-label"
                 title="open menu nav"
               >
                 <div
@@ -133,35 +134,35 @@
                   </svg>
                 </a>
               </div>
-              <div class="header-nav-content">
-                <ul class="nav-list">
-                  <li class="nav-item">
+              <div class="navbar-content">
+                <ul class="navbar-list">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-us-link">US</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-world-link">World</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-politics-link">Politics</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-business-link">Business</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-opinion-link">Opinion</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="nav-page-health-link">Health</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <div class="dropdown">
                       <input
                         type="checkbox"
-                        id="header-nav-dropdown-toggle"
+                        id="navbar-dropdown-toggle"
                         class="dropdown-toggle"
                       />
                       <label
-                        for="header-nav-dropdown-toggle"
+                        for="navbar-dropdown-toggle"
                         class="dropdown-label"
                       >
                         More
@@ -173,21 +174,21 @@
                         </div>
                       </label>
                       <ul class="dropdown-content">
-                        <li class="nav-item">
+                        <li class="navbar-item">
                           <a href="#" id="nav-page-entertainment-link"
                             >Entertainment</a
                           >
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar-item">
                           <a href="#" id="nav-page-style-link">Style</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar-item">
                           <a href="#" id="nav-page-travel-link">Travel</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar-item">
                           <a href="#" id="nav-page-sports-link">Sports</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="navbar-item">
                           <a href="#" id="nav-page-video-link">Video</a>
                         </li>
                       </ul>
@@ -209,7 +210,7 @@
       </nav>
       <main class="content" id="content">
         <h1 class="visually-hidden">FrontPage Content</h1>
-        <div id="content-frontpage-breaking" class="row-heading">
+        <div id="content-frontpage-breaking" class="row-header">
           <h2>Breaking News</h2>
         </div>
         <section class="row">
@@ -296,7 +297,7 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-latest" class="row-heading">
+        <div id="content-frontpage-latest" class="row-header">
           <h2>Latest News</h2>
         </div>
         <section class="row">
@@ -412,7 +413,7 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-local" class="row-heading">
+        <div id="content-frontpage-local" class="row-header">
           <h2>Local News</h2>
         </div>
         <section class="row">
@@ -464,7 +465,7 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-world" class="row-heading">
+        <div id="content-frontpage-world" class="row-header">
           <h2>World News</h2>
         </div>
         <section class="row">
@@ -673,7 +674,7 @@
             </section>
           </article>
         </section>
-        <div id="content-frontpage-paid" class="row-heading">
+        <div id="content-frontpage-paid" class="row-header">
           <h2>Paid Content</h2>
         </div>
         <section class="row">
@@ -743,7 +744,7 @@
           </article>
         </section>
       </main>
-      <footer>
+      <footer class="page-footer">
         <div class="footer-row footer-row-search">
           <div class="footer-column-center">
             <div class="input-form-container">
@@ -2064,26 +2065,26 @@
       </header>
       <section class="mobile-menu-body">
         <nav class="mobile-menu-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
+          <ul class="navbar-list">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-us-link">US</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-world-link">World</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-politics-link">Politics</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-business-link">Business</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-opinion-link">Opinion</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <a href="#" id="mobile-nav-page-health-link">Health</a>
             </li>
-            <li class="nav-item">
+            <li class="navbar-item">
               <div class="dropdown">
                 <input
                   type="checkbox"
@@ -2103,21 +2104,21 @@
                   </div>
                 </label>
                 <ul class="dropdown-content">
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="mobile-nav-page-entertainment-link"
                       >Entertainment</a
                     >
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="mobile-nav-page-style-link">Style</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="mobile-nav-page-travel-link">Travel</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="mobile-nav-page-sports-link">Sports</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="navbar-item">
                     <a href="#" id="mobile-nav-page-video-link">Video</a>
                   </li>
                 </ul>

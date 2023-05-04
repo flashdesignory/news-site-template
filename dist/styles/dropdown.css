@@ -74,7 +74,7 @@
   box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
 }
 
-.dropdown-content .nav-item {
+.dropdown-content .navbar-item {
   margin-right: 0;
   margin-bottom: var(--content-spacing-small);
 }

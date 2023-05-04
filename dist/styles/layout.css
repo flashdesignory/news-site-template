@@ -123,34 +123,7 @@ but useful for people who use screen readers */
 }
 
 /* Headings start */
-.page-heading {
-  display: flex;
-  width: 100%;
-  font-size: 42px;
-  font-weight: bold;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-utils-offwhite);
-  background-color: var(--color-utils-black);
-  z-index: var(--indxe-content-title);
-  padding: var(--content-spacing-xlarge) var(--content-spacing-xlarge) 0
-    var(--content-spacing-xlarge);
-}
-
-.page-heading .page-heading-title {
-  display: flex;
-  flex-shrink: 1;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid var(--color-utils-gray);
-}
-
-.page-heading-title svg path {
-  fill: var(--color-utils-offwhite);
-}
-
-.row-heading {
+.row-header {
   font-size: var(--font-size-large);
   font-weight: bold;
   margin-bottom: var(--content-spacing-xlarge);
