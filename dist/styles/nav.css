@@ -38,12 +38,17 @@
   display: flex;
   width: var(--icon-size);
   height: var(--icon-size);
-  padding: 2px;
   z-index: var(--index-header-button);
+  cursor: pointer;
 }
 
 .page-navigation-logo svg path {
+  transition: var(--transition-default);
   fill: var(--color-utils-offwhite);
+}
+
+.page-navigation-logo:hover svg path {
+  fill: var(--color-utils-white);
 }
 
 .page-navigation-button {
