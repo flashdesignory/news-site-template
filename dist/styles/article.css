@@ -46,6 +46,15 @@
   position: relative;
 }
 
+.article-image-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  position: relative;
+}
+
 .article-image {
   display: flex;
   width: 100%;
@@ -102,6 +111,7 @@
   flex-direction: column;
   flex-shrink: 0;
   min-width: 130px;
+  position: relative;
 }
 
 .article-list-item .article-content {
