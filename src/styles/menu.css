@@ -12,7 +12,8 @@
   color: var(--color-utils-gray-lighter);
 }
 
-.mobile-menu:target {
+.mobile-menu:target,
+.mobile-menu.open {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

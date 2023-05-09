@@ -15,7 +15,8 @@
   color: var(--color-utils-black);
 }
 
-.sitemap:target {
+.sitemap:target,
+.sitemap.open {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

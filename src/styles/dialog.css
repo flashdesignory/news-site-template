@@ -16,7 +16,8 @@
   color: var(--color-utils-black);
 }
 
-.dialog:target {
+.dialog:target,
+.dialog.open {
   display: flex;
   flex-direction: column;
   justify-content: center;

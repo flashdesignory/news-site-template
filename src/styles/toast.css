@@ -12,7 +12,8 @@
   padding: var(--content-spacing-xlarge);
 }
 
-.toast:target {
+.toast:target,
+.toast.open {
   display: flex;
   flex-direction: column;
   justify-content: center;
