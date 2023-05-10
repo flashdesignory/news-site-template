@@ -56,7 +56,12 @@
 }
 
 .toggle-container .label input[type="checkbox"] {
-  display: none;
+  width: 44px;
+  height: 16px;
+  z-index: -1;
+  position: absolute;
+  left: -6px;
+  top: 0;
 }
 
 .toggle-container .label input[type="checkbox"]:checked + .switch::before {
