@@ -16,21 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-/* used for things that should be hidden in the ui,
-but useful for people who use screen readers */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-}
-
 /* Layout visualization */
 .preview {
   min-height: 100px;
@@ -121,6 +106,10 @@ but useful for people who use screen readers */
   row-gap: var(--content-spacing-xlarge);
 }
 
+.grid-container.grid-wrap {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .grid-item {
   display: flex;
   flex-direction: column;
@@ -155,10 +144,18 @@ but useful for people who use screen readers */
   .columns-4-balanced {
     width: calc(50% - (var(--content-spacing-xlarge) / 2));
   }
+
+  .grid-container.grid-wrap {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .columns-wrap {
     width: calc(50% - (var(--content-spacing-xlarge) / 2));
+  }
+
+  .grid-container.grid-wrap {
+    grid-template-columns: 1fr 1fr;
   }
 }
