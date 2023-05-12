@@ -31,8 +31,10 @@
     <link rel="stylesheet" href="styles/article.css" />
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/dropdown.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/sitemap.css" />
     <link rel="stylesheet" href="styles/toast.css" />
+    <link rel="stylesheet" href="styles/messages.css" />
     <link rel="stylesheet" href="styles/layout.css" />
     <!-- <script type="module" src="index.js"></script> -->
   </head>
@@ -125,7 +127,7 @@
                 </div>
               </a>
               <div class="page-navigation-logo">
-                <a href="#sitemap" id="sitemap-link">
+                <a href="#sidebar" id="sidebar-link">
                   <svg width="24" height="24" viewBox="0 0 24 24">
                     <title>Logo Icon</title>
                     <path
@@ -208,6 +210,21 @@
           </div>
         </div>
       </nav>
+      <div id="message" class="message">
+        <a href="#" id="close-message-link" class="close-button">
+          <div class="animated-icon close-icon hover" title="Close Icon">
+            <span class="animated-icon-inner"><span></span><span></span></span>
+          </div>
+        </a>
+        <header class="message-header">
+          <h2>Watch breaking news!</h2>
+        </header>
+        <section class="message-body">
+          <div class="message-description">
+            Something important happened and you should watch it!
+          </div>
+        </section>
+      </div>
       <main class="page-main" id="content">
         <h1 class="visually-hidden">FrontPage Content</h1>
         <div id="content-frontpage-breaking" class="row-header">
@@ -885,7 +902,185 @@
             </div>
           </div>
         </div>
-
+        <div class="footer-row">
+          <div class="footer-column-center">
+            <div class="sitemap">
+              <ul class="sitemap-list">
+                <li class="sitemap-item">
+                  <a aria-current="page" class="active" href="#"
+                    ><h4 class="sitemap-header">Front Page</h4></a
+                  >
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">Breaking News</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest News</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Media</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Highlights</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Top Stories</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"><h4 class="sitemap-header">US</h4></a>
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">World News</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Around the Nation</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Roundup</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Crime &amp; Justice</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Media</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"><h4 class="sitemap-header">World</h4></a>
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">Global trends</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Around the world</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Media</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Today</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Featured</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"
+                    ><h4 class="sitemap-header">Politics</h4></a
+                  >
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">What Really Matters</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Today</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Headlines</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Media</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Election</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"
+                    ><h4 class="sitemap-header">Business</h4></a
+                  >
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest trends</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Market Watch</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Economy Today</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Must Read</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Educational</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"
+                    ><h4 class="sitemap-header">Opinion</h4></a
+                  >
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">A deeper look</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Top Issues</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Trending</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Think about it</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Media</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sitemap-item">
+                  <a class="" href="#"
+                    ><h4 class="sitemap-header">Health</h4></a
+                  >
+                  <ul class="sitemap-sublist">
+                    <li class="sitemap-subitem">
+                      <a href="#">Trending</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Facts</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Medical Breakthroughs</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Latest Videos</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Educational</a>
+                    </li>
+                    <li class="sitemap-subitem">
+                      <a href="#">Paid Content</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="footer-row">
           <div class="footer-column-center">
             <div class="footer-links">
@@ -1768,12 +1963,12 @@
         </div>
       </section>
     </div>
-    <div id="sitemap" class="sitemap">
+    <div id="sidebar" class="sidebar">
       <a
         href="#"
-        id="close-sitemap-link"
+        id="close-sidebar-link"
         class="close-button"
-        title="close sitemap"
+        title="close sidebar"
       >
         <div class="animated-icon close-icon hover" title="Close Icon">
           <span class="animated-icon-inner">
@@ -1782,364 +1977,364 @@
           </span>
         </div>
       </a>
-      <header class="sitemap-header"><h2>Sitemap</h2></header>
-      <section class="sitemap-body">
-        <details id="sitemap-frontpage-details" class="sitemap-group">
+      <header class="sidebar-header"><h2>Sitemap</h2></header>
+      <section class="sidebar-body">
+        <details id="sidebar-frontpage-details" class="sidebar-group">
           <summary>Frontpage</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
               <a
                 href="#content-frontpage-breaking"
-                id="sitemap-page-front-section-breaking"
+                id="sidebar-page-front-section-breaking"
                 >Breaking News</a
               >
             </li>
-            <li class="sitemap-list-item">
+            <li class="sidebar-list-item">
               <a
                 href="#content-frontpage-latest"
-                id="sitemap-page-front-section-latest-link"
+                id="sidebar-page-front-section-latest-link"
                 >Latest News</a
               >
             </li>
-            <li class="sitemap-list-item">
+            <li class="sidebar-list-item">
               <a
                 href="#content-frontpage-local"
-                id="sitemap-page-front-section-local-link"
+                id="sidebar-page-front-section-local-link"
                 >Local News</a
               >
             </li>
-            <li class="sitemap-list-item">
+            <li class="sidebar-list-item">
               <a
                 href="#content-frontpage-world"
-                id="sitemap-page-front-section-world-link"
+                id="sidebar-page-front-section-world-link"
                 >World News</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-us-details" class="sitemap-group">
+        <details id="sidebar-us-details" class="sidebar-group">
           <summary>US</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-us-section-crime+justice-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-us-section-crime+justice-link"
                 >Crime + Justice</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-us-section-energy+environment-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-us-section-energy+environment-link"
                 >Energy + Environment</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-us-section-extreme_weather-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-us-section-extreme_weather-link"
                 >Extreme Weather</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-us-section-space+science-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-us-section-space+science-link"
                 >Space + Science</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-world-details" class="sitemap-group">
+        <details id="sidebar-world-details" class="sidebar-group">
           <summary>World</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-africa-link">Africa</a>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-africa-link">Africa</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-americas-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-americas-link"
                 >Americas</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-asia-link">Asia</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-asia-link">Asia</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-australia-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-australia-link"
                 >Australia</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-china-link">China</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-china-link">China</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-europe-link">Europe</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-europe-link">Europe</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-india-link">India</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-india-link">India</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-middle_east-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-middle_east-link"
                 >Middle East</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-world-section-united_kingdom-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-world-section-united_kingdom-link"
                 >United Kingdom</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-politics-details" class="sitemap-group">
+        <details id="sidebar-politics-details" class="sidebar-group">
           <summary>Politics</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
               <a
                 href="#"
-                id="sitemap-page-politics-section-the_biden_presidency-link"
+                id="sidebar-page-politics-section-the_biden_presidency-link"
                 >The Biden Presidency</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-politics-section-facts_first-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-politics-section-facts_first-link"
                 >Facts First</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-politics-section-2022_midterms-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-politics-section-2022_midterms-link"
                 >2022 Midterms</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-business-details" class="sitemap-group">
+        <details id="sidebar-business-details" class="sidebar-group">
           <summary>Business</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-business-section-markets-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-business-section-markets-link"
                 >Markets</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-business-section-tech-link">Tech</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-business-section-tech-link">Tech</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-business-section-media-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-business-section-media-link"
                 >Media</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-business-section-calculators-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-business-section-calculators-link"
                 >Calculators</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-business-section-videos-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-business-section-videos-link"
                 >Videos</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-opinion-details" class="sitemap-group">
+        <details id="sidebar-opinion-details" class="sidebar-group">
           <summary>Opinion</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-opinion-section-political_opeds-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-opinion-section-political_opeds-link"
                 >Political Op-Eds</a
               >
             </li>
-            <li class="sitemap-list-item">
+            <li class="sidebar-list-item">
               <a
                 href="#"
-                id="sitemap-page-opinion-section-social_commentary-link"
+                id="sidebar-page-opinion-section-social_commentary-link"
                 >Social Commentary</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-health-details" class="sitemap-group">
+        <details id="sidebar-health-details" class="sidebar-group">
           <summary>Health</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-life_but_better-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-life_but_better-link"
                 >Life, But Better</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-fitness-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-fitness-link"
                 >Fitness</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-food-link">Food</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-food-link">Food</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-sleep-link">Sleep</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-sleep-link">Sleep</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-mindfulness-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-mindfulness-link"
                 >Mindfulness</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-health-section-relationships-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-health-section-relationships-link"
                 >Relationships</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-entertainment-details" class="sitemap-group">
+        <details id="sidebar-entertainment-details" class="sidebar-group">
           <summary>Entertainment</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-entertainment-section-movies-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-entertainment-section-movies-link"
                 >Movies</a
               >
             </li>
-            <li class="sitemap-list-item">
+            <li class="sidebar-list-item">
               <a
                 href="#"
-                id="sitemap-page-entertainment-section-television-link"
+                id="sidebar-page-entertainment-section-television-link"
                 >Television</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-entertainment-section-celebrity-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-entertainment-section-celebrity-link"
                 >Celebrity</a
               >
             </li>
           </ul>
         </details>
-        <details id="sitemap-style-details" class="sitemap-group">
+        <details id="sidebar-style-details" class="sidebar-group">
           <summary>Style</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-arts-link">Arts</a>
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-arts-link">Arts</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-design-link">Design</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-design-link">Design</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-fashion-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-fashion-link"
                 >Fashion</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-architecture-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-architecture-link"
                 >Architecture</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-luxury-link">Luxury</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-luxury-link">Luxury</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-beauty-link">Beauty</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-beauty-link">Beauty</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-style-section-video-link">Video</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-style-section-video-link">Video</a>
             </li>
           </ul>
         </details>
-        <details id="sitemap-travel-details" class="sitemap-group">
+        <details id="sidebar-travel-details" class="sidebar-group">
           <summary>Travel</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-travel-section-destinations-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-travel-section-destinations-link"
                 >Destinations</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-travel-section-food&drink-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-travel-section-food&drink-link"
                 >Food & Drink</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-travel-section-news-link">News</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-travel-section-news-link">News</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-travel-section-stay-link">Stay</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-travel-section-stay-link">Stay</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-travel-section-video-link">Video</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-travel-section-video-link">Video</a>
             </li>
           </ul>
         </details>
-        <details id="sitemap-sports-details" class="sitemap-group">
+        <details id="sidebar-sports-details" class="sidebar-group">
           <summary>Sports</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-football-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-football-link"
                 >Football</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-tennis-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-tennis-link"
                 >Tennis</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-golf-link">Golf</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-golf-link">Golf</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-motorsport-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-motorsport-link"
                 >Motorsport</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-us_sports-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-us_sports-link"
                 >US Sports</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-olympics-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-olympics-link"
                 >Olympics</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-climbing-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-climbing-link"
                 >Climbing</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-esports-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-esports-link"
                 >Esports</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-sports-section-hokey-link">Hokey</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-sports-section-hokey-link">Hokey</a>
             </li>
           </ul>
         </details>
-        <details id="sitemap-videos-details" class="sitemap-group">
+        <details id="sidebar-videos-details" class="sidebar-group">
           <summary>Videos</summary>
-          <ul class="sitemap-list">
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-live_tv-link"
+          <ul class="sidebar-list">
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-live_tv-link"
                 >Live TV</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-digital_studios-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-digital_studios-link"
                 >Digital Studios</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-cnn_films-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-cnn_films-link"
                 >CNN Films</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-motorsport-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-motorsport-link"
                 >Motorsport</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-hln-link">HLN</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-hln-link">HLN</a>
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-tv_schedule-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-tv_schedule-link"
                 >TV Schedule</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-tv_shows_az-link"
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-tv_shows_az-link"
                 >TV Shows A-Z</a
               >
             </li>
-            <li class="sitemap-list-item">
-              <a href="#" id="sitemap-page-videos-section-cnnvr-link">CNNVR</a>
+            <li class="sidebar-list-item">
+              <a href="#" id="sidebar-page-videos-section-cnnvr-link">CNNVR</a>
             </li>
           </ul>
         </details>
