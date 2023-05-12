@@ -21,3 +21,4 @@ https://flashdesignory.github.io/news-site-template/
 | Settings | ![screenshot](./preview-settings.png) | Settings can be viewed by clickin on any of the settings icons in the footer, or by navigating to `/#settings.`                                        |
 | DropDown | ![screenshot](./preview-dropdown.png) | Dropdown toggles in the main navigation or in the mobile menu will toggle the content.                                                                 |
 | Toast    |                                       | Navigating to `/#notification` will display a generic notification.                                                                                    |
+| Message  |                                       | Navigating to `/#message` will display a generic message.                                                                                              |
