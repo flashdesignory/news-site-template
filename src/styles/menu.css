@@ -99,39 +99,11 @@
   margin-right: 0;
 }
 
-.mobile-menu-icons-list {
+.mobile-menu .icons-group {
   display: flex;
   justify-content: center;
+  margin: var(--content-spacing-xlarge) 0;
   width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: var(--content-spacing-large) 0;
-  border-top: 1px solid var(--color-utils-gray);
-}
-
-.mobile-menu-icons-item {
-  position: relative;
-}
-
-.mobile-menu-icons-item:not(:last-child) {
-  margin-right: var(--content-spacing-large);
-}
-
-.mobile-menu-icon {
-  display: flex;
-  width: var(--icon-size-small);
-  height: var(--icon-size-small);
-  position: relative;
-  background-color: var(--color-utils-black);
-}
-
-.mobile-menu-icon svg path {
-  fill: var(--color-utils-offwhite);
-  transition: fill 0.3s ease;
-}
-
-.mobile-menu-icons-item:hover svg path {
-  fill: var(--color-utils-white);
 }
 
 /* dropdown override */
