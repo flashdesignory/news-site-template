@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "http-server": "^14.1.1",
-    "news-site-css": "^1.1.8"
+    "news-site-css": "^1.2.0"
   },
   "devDependencies": {
     "prettier": "^2.8.8",
