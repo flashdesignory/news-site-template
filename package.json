@@ -11,7 +11,8 @@
     "format": "npm run pretty ; npm run stylelint"
   },
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "^14.1.1",
+    "news-site-css": "^1.1.6"
   },
   "devDependencies": {
     "prettier": "^2.8.8",

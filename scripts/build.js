@@ -6,7 +6,7 @@ const targetDirectory = "./dist";
 
 const htmlFile = "index.html";
 
-const filesToMove = [];
+const filesToMove = ["node_modules/news-site-css/dist/index.min.css"];
 const foldersToMove = ["./assets"];
 
 const copy = async (src, dest) => {
