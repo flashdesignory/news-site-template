@@ -183,9 +183,9 @@
                     </div>
                 </div>
                 <div class="page-navigation-column-right">
-                    <button id="login-button" class="button secondary-button nav-button">
+                    <a href="#login" id="login-button" class="button secondary-button nav-button">
                         Log In
-                    </button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -2108,6 +2108,43 @@
                 <button id="toast-reject-button" class="button secondary-button toast-actions-button">Cancel</button>
                 <button id="toast-accept-button" class="button primary-button toast-actions-button">Accept</button></div>
         </section>
+    </div>
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <a href="#" id="close-login-link" class="modal-close-button">
+                <div class="modal-close-button-icon animated-icon close-icon hover" title="Close Icon">
+                  <span class="animated-icon-inner">
+                    <span></span><span></span>
+                  </span>
+                </div>
+              </a>
+              <header class="modal-header">
+                <h2>Login</h2>
+              </header>
+              <section class="modal-body">
+               <div class="form-container">
+                    <div class="form-content">
+                        <form id="form">
+                            <div class="input-container">
+                                <label class="label visually-hidden" for="input">Enter Something</label>
+                                <input class="input input-type-text" type="text" autocomplete="off" id="input" placeholder="Username">
+                            </div>
+                            <div class="input-container">
+                                <label class="label visually-hidden" for="input">Enter Something</label>
+                                <input class="input input-type-text" type="text" autocomplete="off" id="input" placeholder="Password">
+                            </div>
+                            <div class="form-actions">
+                                <div class="input-container form-actions-item">
+                                    <label class="label visually-hidden" for="submit">submit form</label>
+                                    <input class="input input-type-submit" type="submit" autocomplete="off" id="submit" value="Submit!">
+                                </div>
+                                <a href="#" id="toast-reject-button" class="button secondary-button dark form-actions-item">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+               </div>
+              </section>
+        </div>
     </div>
   </body>
 </html>
