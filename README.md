@@ -1,12 +1,14 @@
 # news-site-template
 
-## Description
-
-HTML, CSS template for a generic news site.
+[![Deploy static content to Pages](https://github.com/flashdesignory/news-site-template/actions/workflows/static.yml/badge.svg)](https://github.com/flashdesignory/news-site-template/actions/workflows/static.yml)
 
 ## Preview
 
 https://flashdesignory.github.io/news-site-template/
+
+## Description
+
+HTML, CSS template for a generic news site.
 
 ## Screenshot
 
